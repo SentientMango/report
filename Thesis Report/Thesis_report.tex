@@ -14,6 +14,8 @@
  left=20mm,
  top=12mm,
 }
+
+\setcounter{secnumdepth}{4}
  
 \def\thesection{\arabic{section}}
 
@@ -123,12 +125,24 @@ Substituting $\sin^2 \theta_W = 0.2315$, at moderate $p_T$ values, $R \approx 1.
 \end{figure}
 This ratio R can be used as is for \ZZ and \Zgam, as the contribution from the $Z\rightarrow ll$ is identically multiplied into the numerator as well as the denominator, and thus cancels out.
 
+\subsection*{MCFM cross sections}
 A Monte Carlo generator, MCFM v8.0 \cite{MCFM} at NLO, in this case, is used to generate cross sections of \ZZ and \Zgam processes, with a selection of generator level cuts. The samples are generated with cuts on $E_{T,min}^{miss}$ for the $ZZ$ process $p_{T,min}(\gamma)$ for the $Z+\gamma$ process. A ratio of these cross sections is taken to obtain the $R$ curve as a function of $p_T$. The uncertainty on $R$ is calculated by varying several parameters at the generator level, such as the renormalization and factorization scales, the PDF sets used, photon fragmentation, etc. Effects of applying lepton cuts on the cross sections as well as the ratio, and the contributions of the $q \bar{q}$ and $gg$ processes are also studied.
 
 However, the MCFM generator only produces $Z\rightarrow ee$ instead of $Z\rightarrow ll$. Thus, this branching ratio needs to be accounted for to obtain the value of $R$.
 \begin{equation}\label{eq:R_inc}
 	R_{inc} = R * \frac{BR(Z\rightarrow ee)}{BR(Z \rightarrow ee)*BR(Z\rightarrow \nu\nu)*2}
 \end{equation}
+
+\subsection*{Monte Carlo samples - DxAODs}
+MCFM gives raw cross sections. Thus the next step is to run the analysis on generated Monte Carlo samples that give event information. The cuts on the leptons, such at $p_T$, $\eta$ and the di-lepton mass window are applied consistently to both.
+
+Monte Carlo events samples are generated using ATHENA \cite{ATHENA}, at NLO. They are then converted to TRUTH3 DxAOD format for analysis. The analysis is implemented using a Python script.
+
+Only events that pass all the cuts are kept. The fraction of such events is multiplied with the total cross section of the generated sample to obtain the cross section corresponding to the event subset we are interested in.
+
+It is necessary to check the consistency for each of the processes, before proceeding to calculate the ratio $R$.
+
+The analysis and comparison has only been implemented for the $ZZ \rightarrow ll\nu\nu$ process for the moment.
 
 \section{Generator Parameters}
 The samples are generated using MCFM v8.0 for the following data points\footnote{MCFM does not generate $Z\rightarrow ll$ but $Z\rightarrow ee$. As electrons and muons have similar properties with the exception of mass, simply the branching fraction of $Z\rightarrow ee$ must be accounted for at a later stage.}
@@ -166,6 +180,9 @@ The following generator level cuts are used for the first run of $ZZ$ and $Z+\ga
 The constraint on $M_{ee}$ in the case of $Z+\gamma$ suppresses the FSR process by ensuring that the lepton pair are from a $Z$ decay only.
 
 \section{Results}
+
+\subsection*{Uncertainties with MCFM}
+\setcounter{subsection}{1}
 Upon running the steering file with the parameters described above, the cross sections shown in Figure \ref{xsecs} are obtained. Throughout this analysis, this sample is the reference.
 
 \begin{figure}[H]
@@ -198,7 +215,7 @@ The $R$ value is observed to increase from $\approx 0.24$ at 50 GeV to $\approx 
 	\label{fig:RcurveBR}
 \end{figure}
 
-\subsection{Lepton Cuts}
+\subsubsection{Lepton Cuts}
 To check the effects of lepton cuts on the ratio, samples with similar parameters as those in Table \ref{table:default} are generated. However, we relax the cuts on leptons. Both the leading and subleading lepton should have $p_T > 5$ GeV, and $\eta <$ 10. In the lower $p_T$ regions, the cross section falls by nearly half in both processes. However, the ratio is not affected very much, as seen in Figure \ref{fig:lepcut}.
 \begin{figure}[H]
 \centering
@@ -208,7 +225,7 @@ To check the effects of lepton cuts on the ratio, samples with similar parameter
 \end{figure}
 The $R$ curves differ by $\approx 4\%$ at high $p_T$, and $\approx 7\%$ at 100 GeV.
 
-\subsection{Scale Variation}
+\subsubsection{Scale Variation}
 The Renormalization and Factorization scales are arbitrary parameters that address the UV and IR divergences respectively that arise while calculating cross sections. They are important when considering higher order effects in QCD. To obtain the uncertainties associated to these scales, the Renormalization ($\mu_R$) and Factorization ($\mu_F$) scales are each varied by a factor of 2 in either direction from the central value, $M_Z = 91.187$ GeV, to obtain the uncertainty. Figure \ref{fig:scalecompare}.
 \begin{figure}[H]
 \centering
@@ -234,7 +251,7 @@ Looking at the the contribution of the $gg$ subprocess separately from the $q\ba
 \end{figure}
 Gluon-gluon processes contribute to 8.6\% of the total cross section for the $ZZ$ process and 2.5\% of the $Z+\gamma$ process. An uncertainty of $\pm \approx 2\%$ around $R_{gg} = 1.37$ at 100 GeV and is $< 4\%$ for all $p_T$. It remains to understand the shape and magnitude of the $R$ curve for $gg$ processes.
 
-\subsection{PDF variation}
+\subsubsection{PDF variation}
 The PDF set used for reference is the \texttt{CT14.NN} PDF set. To study the variation due by varying PDFs, the PDF sets used are \texttt{PDF4LHC15}\cite{PDF4}, constructed from the combination of \texttt{CT14,MMHT14} and \texttt{NNPDF3.0} PDF sets. These sets are provided by LHAPDF6\cite{LHAPDF}. \texttt{PDF4LHC15} gives access to different PDF groups. The group used here is \texttt{PDF4LHC15\_nlo\_30}, consisting of 30 PDF sets. While the most accurate uncertainties are given by \texttt{PDF4LHC15\_nlo\_100} sets, \texttt{PDF4LHC15\_nlo\_30} is used here for a faster, reasonably accurate estimate of the uncertainties.
 \begin{figure}[H]
 \centering
@@ -263,13 +280,28 @@ where $N_{mem}$ is the number of member sets in the group, in this case, 30. The
 \end{figure}
 The $gg$ contributions differ by a factor of 10. This curve appears to reach an a constant value at a higher $p_T$ value than the ratio curve constructed from the total cross section. The gluon gluon process is of interest, thus it has also been compared to the reference \texttt{CT14.NN} set.
 
+\subsubsection{Photon Fragmentation}
+
+\subsection{Monte Carlo samples - Truth}
+The next step would be to implement the analysis to Monte Carlo samples giving event information at the truth level. For this purpose, $ZZ\rightarrow ll\nu\nu$ and $Z\gamma \rightarrow ll\gamma$ samples are generated using ATHENA /cite{ATHENA}, converted into Derived xAOD after simulation of the detector, and reconstruction of particles. This format also contains truth level information of the particles in the TRUTH3 format.
+
+The analysis and comparison to MCFM results has been implemented on the \ZZ process. The cuts on the lepton $p_T$ and $\eta$, as well as the dilepton mass window are as stated in Table \ref{table:default}. For the comparison, only Truth Electrons have been considered, for the analysis on the MCFM and ATHENA samples to be as identical as possible. 
+
+There are some notable differences between the analysis done with MCFM to the one done with ATHENA.
+\begin{itemize}
+	\item The ATHENA sample is made using a combination of the "enter sets" PDF sets. This corresponds to the \textit{PDF4LHC15_nlo} sets in MCFM.
+	\item The ATHENA sample consists of contributions from $qq$ and $qg$ processes. The $gg$ process is absent.
+\end{itemize}
+
+Thus, an MCFM sample, with the PDF set \textit{PDF4LHC15_nlo_100} is generated, with the \textit{omitgg} switch turned on in the steering file.
+
 \section{Conclusion}
 We propose a new method quantify the uncertainty from sources such as renormalization and factorization scales and different PDF distributions. From these, we observe that at high $p_T$, the value of $R$ approaches $0.47$. The uncertainty is quantified for $p_T > 100$ GeV slice to be $\approx 2\%$ from scale variation, and $\approx 2.55\%$ from PDF variation, around $R = 0.40$.
 
 It remains to observe the effects of photon fragmentation, and to take a closer look at $gg$, $q\bar{q}$ and $qg$ contributions to this ratio for \texttt{CT14.NN} as well as \texttt{PDF4LHC15\_nlo\_30} sets. In order to improve the uncertainty, we will run over the \texttt{PDF4LHC15\_nlo\_100} sets.
 
 \section*{Acknowlegements}
-This work, part of the DESY Summer Programme 2017, was conducted under the patient supervision of Dr. Beate Heinemann. In addition to her guidance and advice, I had the help of Dr. Yee Chinn Yapp and Dr. Pieter Everaerts, who helped me work on streamlining the presentation of this work, and Dr. Sarah Heim, whose office is close enough to mine that I could bother her for the tiniest of details.
+This work was conducted under the patient supervision of Dr. Beate Heinemann. In addition to her guidance and advice, I had the help of Dr. Yee Chinn Yapp and Dr. Pieter Everaerts, who helped me work on streamlining the presentation of this work, and Dr. Sarah Heim, whose office is close enough to mine that I could bother her for the tiniest of details.
 
 \begin{thebibliography}{9}
 \bibitem{gammajet}
@@ -297,6 +329,10 @@ Cavendish Laboratory, University of Cambridge, CB3 0HE, UK; 2011\\
 	\textit{PDF4LHC recommendations for LHC Run II}\\
 	\texttt{[arXiv:1510.03865]}
 
+\bibitem{ATHENA}
+	\textit{ATHENA reference}\\
+	\texttt{ATHENA reference}
+	\
 \end{thebibliography}
 
 \end{document}
