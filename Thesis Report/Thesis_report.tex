@@ -308,7 +308,23 @@ where $R_{j\gamma}$ is the separation of the photon and the $j^{th}$ hadron.\\
 This requirement constrains the sum of hadronic energy inside a cone of radius $R_{j\gamma}$, for all separations $R_{j\gamma}$ less than a chosen cone size $R_0$. This prescription allows soft radiation inside the photon cone, but collinear singularities are removed. The smooth cone isolation is infrared finite, thus fragmentation contributions do not need to be included in this case.\\
 Smooth isolation is difficult to implement experimentally, however, we wish to look at both methods to compute the uncertainty due to photon fragmentation.
 
-In this analysis, $R_0$ is chosen to be 0.4
+In this analysis, $R_0$ is chosen to be 0.4. The central value is chosen is chosen to be from the sample using smooth cone isolation (Frixione) with $\epsilon_h = 0.075$ and $n=1$. The comparisons with variations to these two variables is shown in Figure \ref{fig:photon_frag}.
+
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{frag.png}
+	\caption{$R$ curve plotting as a function of $p_T$, showing the uncertainty due to variation of photon isolation parameters $\epsilon_h$ and $n$ in the smooth cone isolation procedure (Frixione) and $\epsilon_h$ in the photon isolation procedure.}
+	\label{fig:photon_frag}
+\end{figure}
+
+The uncertainty is calculated in the following manner:
+\begin{equation}
+\begin{split}
+\delta R_i &= |R_i - R_{ref}| \hspace{2cm}  i \in (1,2,3,4)\\
+\delta R &= \sqrt{\max_{i=1,2,3}(\delta R_i)^2 + (\delta R_4)^2}
+\end{split}
+\end{equation}
+An uncertainty less than 4\% is observed over the full range, and $< 2\%$ around $R = 0.42$ at $p_T = 100$ GeV. 
 
 \subsection*{Monte Carlo samples - Truth}
 \label{subsec:MC_truth}
