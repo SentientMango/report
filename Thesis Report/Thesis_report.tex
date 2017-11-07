@@ -16,6 +16,7 @@
 }
 
 \setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
  
 \def\thesection{\arabic{section}}
 
@@ -182,6 +183,8 @@ The constraint on $M_{ee}$ in the case of $Z+\gamma$ suppresses the FSR process 
 \section{Results}
 
 \subsection*{Uncertainties with MCFM}
+\label{subsec:MCFM_unc}
+\addcontentsline{toc}{subsection}{\nameref{subsec:MCFM_unc}}
 \setcounter{subsection}{1}
 Upon running the steering file with the parameters described above, the cross sections shown in Figure \ref{xsecs} are obtained. Throughout this analysis, this sample is the reference.
 
@@ -282,18 +285,20 @@ The $gg$ contributions differ by a factor of 10. This curve appears to reach an 
 
 \subsubsection{Photon Fragmentation}
 
-\subsection{Monte Carlo samples - Truth}
+\subsection*{Monte Carlo samples - Truth}
+\label{subsec:MC_truth}
+\addcontentsline{toc}{subsection}{\nameref{subsec:MC_truth}}
 The next step would be to implement the analysis to Monte Carlo samples giving event information at the truth level. For this purpose, $ZZ\rightarrow ll\nu\nu$ and $Z\gamma \rightarrow ll\gamma$ samples are generated using ATHENA /cite{ATHENA}, converted into Derived xAOD after simulation of the detector, and reconstruction of particles. This format also contains truth level information of the particles in the TRUTH3 format.
 
 The analysis and comparison to MCFM results has been implemented on the \ZZ process. The cuts on the lepton $p_T$ and $\eta$, as well as the dilepton mass window are as stated in Table \ref{table:default}. For the comparison, only Truth Electrons have been considered, for the analysis on the MCFM and ATHENA samples to be as identical as possible. 
 
 There are some notable differences between the analysis done with MCFM to the one done with ATHENA.
 \begin{itemize}
-	\item The ATHENA sample is made using a combination of the "enter sets" PDF sets. This corresponds to the \textit{PDF4LHC15_nlo} sets in MCFM.
+	\item The ATHENA sample is made using a combination of the "enter sets" PDF sets. This corresponds to the \texttt{PDF4LHC15\_nlo} sets in MCFM.
 	\item The ATHENA sample consists of contributions from $qq$ and $qg$ processes. The $gg$ process is absent.
 \end{itemize}
 
-Thus, an MCFM sample, with the PDF set \textit{PDF4LHC15_nlo_100} is generated, with the \textit{omitgg} switch turned on in the steering file.
+Thus, an MCFM sample, with the PDF set \texttt{PDF4LHC15\_nlo\_100} is generated, with the \texttt{omitgg} switch turned on in the steering file.
 
 \section{Conclusion}
 We propose a new method quantify the uncertainty from sources such as renormalization and factorization scales and different PDF distributions. From these, we observe that at high $p_T$, the value of $R$ approaches $0.47$. The uncertainty is quantified for $p_T > 100$ GeV slice to be $\approx 2\%$ from scale variation, and $\approx 2.55\%$ from PDF variation, around $R = 0.40$.
