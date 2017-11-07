@@ -137,13 +137,19 @@ However, the MCFM generator only produces $Z\rightarrow ee$ instead of $Z\righta
 \subsection*{Monte Carlo samples - DxAODs}
 MCFM gives raw cross sections. Thus the next step is to run the analysis on generated Monte Carlo samples that give event information. The cuts on the leptons, such at $p_T$, $\eta$ and the di-lepton mass window are applied consistently to both.
 
-Monte Carlo events samples are generated using ATHENA \cite{ATHENA}, at NLO. They are then converted to TRUTH3 DxAOD format for analysis. The analysis is implemented using a Python script.
+Monte Carlo events samples are generated using the ATHENA framework \cite{ATHENA}, at NLO. They are then converted to TRUTH3 DxAOD format for analysis. The analysis is implemented using a Python script.
 
 Only events that pass all the cuts are kept. The fraction of such events is multiplied with the total cross section of the generated sample to obtain the cross section corresponding to the event subset we are interested in.
+\begin{equation}
+	\frac{passed\ events}{total\ events}*\sigma_{xAOD}
+\end{equation}
+where
+\begin{center}
+\label{eq:xAOD_xsec_frac}
+$\sigma_{xAOD} = 923.18 \text{ fb}$
+\end{center}
 
 It is necessary to check the consistency for each of the processes, before proceeding to calculate the ratio $R$.
-
-The analysis and comparison has only been implemented for the $ZZ \rightarrow ll\nu\nu$ process for the moment.
 
 \section{Generator Parameters}
 The samples are generated using MCFM v8.0 for the following data points\footnote{MCFM does not generate $Z\rightarrow ll$ but $Z\rightarrow ee$. As electrons and muons have similar properties with the exception of mass, simply the branching fraction of $Z\rightarrow ee$ must be accounted for at a later stage.}
@@ -284,21 +290,55 @@ where $N_{mem}$ is the number of member sets in the group, in this case, 30. The
 The $gg$ contributions differ by a factor of 10. This curve appears to reach an a constant value at a higher $p_T$ value than the ratio curve constructed from the total cross section. The gluon gluon process is of interest, thus it has also been compared to the reference \texttt{CT14.NN} set.
 
 \subsubsection{Photon Fragmentation}
+The \Zgam process may contain photons that arise from the hadron showers. It is therefore important to isolate the photon that arises from the hard vertex from hadronic activity. This reduces unwanted background from pion decays, or fragmentation processes.
+
+Experimentally, photon isolation is implemented with the following cuts:
+\begin{equation}
+\sum_{\in R_0} E_T(had) < \epsilon_h p_T^\gamma \text{\hspace{1cm} or \hspace{1cm}} \sum_{\in R_0} E_T(had) < E_T^{max}
+\end{equation}
+\label{eq:photon_isol}
+limiting the transverse hadronic energy $E_T(had)$ in a cone of size $R_0 = \sqrt{\Delta\eta^2 + \Delta\phi^2}$ around the photon, to some fraction of the photon $p_T$, or some fixed small cut-off.
+
+The smooth cone isolation method of Frixione \cite{frixione} is an alternative isolation procedure, which simplifies calculations by avoiding fragmentation contribuitions. The following isolation prescription is applied to the photon:
+\begin{equation}
+	\sum_{R_{j\gamma} \in R_0} E_T(had) < \epsilon_h p_T^\gamma \left(\frac{1-\cos R_{j\gamma}}{1-\cos R_0}\right)^n.
+\end{equation}
+\label{eq:frix_isol}
+where $R_{j\gamma}$ is the separation of the photon and the $j^{th}$ hadron.\\
+This requirement constrains the sum of hadronic energy inside a cone of radius $R_{j\gamma}$, for all separations $R_{j\gamma}$ less than a chosen cone size $R_0$. This prescription allows soft radiation inside the photon cone, but collinear singularities are removed. The smooth cone isolation is infrared finite, thus fragmentation contributions do not need to be included in this case.\\
+Smooth isolation is difficult to implement experimentally, however, we wish to look at both methods to compute the uncertainty due to photon fragmentation.
+
+In this analysis, $R_0$ is chosen to be 0.4
 
 \subsection*{Monte Carlo samples - Truth}
 \label{subsec:MC_truth}
 \addcontentsline{toc}{subsection}{\nameref{subsec:MC_truth}}
-The next step would be to implement the analysis to Monte Carlo samples giving event information at the truth level. For this purpose, $ZZ\rightarrow ll\nu\nu$ and $Z\gamma \rightarrow ll\gamma$ samples are generated using ATHENA /cite{ATHENA}, converted into Derived xAOD after simulation of the detector, and reconstruction of particles. This format also contains truth level information of the particles in the TRUTH3 format.
-
-The analysis and comparison to MCFM results has been implemented on the \ZZ process. The cuts on the lepton $p_T$ and $\eta$, as well as the dilepton mass window are as stated in Table \ref{table:default}. For the comparison, only Truth Electrons have been considered, for the analysis on the MCFM and ATHENA samples to be as identical as possible. 
-
-There are some notable differences between the analysis done with MCFM to the one done with ATHENA.
+The next step would be to implement the analysis to Monte Carlo samples giving event information at the truth level. For this purpose, $ZZ\rightarrow ll\nu\nu$ and $Z\gamma \rightarrow ll\gamma$ events are generated using EvtGen, converted into Derived xAOD after simulation and reconstruction of the event using pythia and powheg. This sample contains truth level information of the particles in the TRUTH3 format.\\
+The analysis and comparison to MCFM results has been implemented on the \ZZ process. The cuts on the lepton $p_T$ and $\eta$, as well as the dilepton mass window are as stated in Table \ref{table:default}. For the comparison, only Truth Electrons have been considered, for the analysis on the MCFM and the DxAOD samples to be as identical as possible.\\
+There are some notable differences between the analysis done with MCFM and the DxAOD sample.
 \begin{itemize}
-	\item The ATHENA sample is made using a combination of the "enter sets" PDF sets. This corresponds to the \texttt{PDF4LHC15\_nlo} sets in MCFM.
-	\item The ATHENA sample consists of contributions from $qq$ and $qg$ processes. The $gg$ process is absent.
+	\item The DxAOD sample is made using a combination of the "enter sets" PDF sets. This corresponds to the \texttt{PDF4LHC15\_nlo} sets in MCFM.
+	\item The DxAOD sample consists of contributions from $qq$ and $qg$ processes. The $gg$ process is absent.
 \end{itemize}
+Thus, an MCFM sample is generated, with the PDF set \texttt{PDF4LHC15\_nlo\_100}, and the \texttt{omitgg} switch turned on in the steering file.
 
-Thus, an MCFM sample, with the PDF set \texttt{PDF4LHC15\_nlo\_100} is generated, with the \texttt{omitgg} switch turned on in the steering file.
+Table \ref{table:xAOD_MCFM_compare} shows the comparison of the effective cross section for the \ZZ process\footnote{The analysis and comparison has only been implemented for the \ZZ process for the moment.} as a function of minimum $p_T^{miss}$.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|c|c|c|}
+	\hline
+	Min $p_T^{miss}$ [GeV] & MCFM Cross section [fb] & xAOD Cross section [fb]\\
+	\hline
+	0 & 99.45 $\pm$ 0.13 & 101.17\\
+	50 & 49.95 $\pm$ 0.9 & 49.86\\
+	100 & 16.69 $\pm$ 0.3 & 15.73\\
+	300 & 0.85 $\pm$ 0.13 & 0.69\\
+	\hline
+	\end{tabular}
+	\caption{A comparison of the cross section calculated as per equation \ref{eq:xAOD_xsec_frac} from the xAOD sample, to the cross section obtained from MCFM for the \ZZ process. The contribution from $gg$ process is excluded from both samples}
+	\label{table:xAOD_MCFM_compare}
+\end{table}
 
 \section{Conclusion}
 We propose a new method quantify the uncertainty from sources such as renormalization and factorization scales and different PDF distributions. From these, we observe that at high $p_T$, the value of $R$ approaches $0.47$. The uncertainty is quantified for $p_T > 100$ GeV slice to be $\approx 2\%$ from scale variation, and $\approx 2.55\%$ from PDF variation, around $R = 0.40$.
@@ -337,7 +377,36 @@ Cavendish Laboratory, University of Cambridge, CB3 0HE, UK; 2011\\
 \bibitem{ATHENA}
 	\textit{ATHENA reference}\\
 	\texttt{ATHENA reference}
-	\
+	
+\bibitem{powheg}
+	POWHEG BOX
+	\begin{itemize}
+	\item \textbf{P. Nason}\\
+	JHEP 0411 (2004) 040, hep-ph/0409146
+	\item \textbf{S. Frixione, P. Nason and C. Oleari}\\
+	JHEP 0711 (2007) 070\\
+	\texttt{arXiv:0709.2092}
+	\item \textbf{S. Alioli, P. Nason, C. Oleari and E. Re}\\
+	JHEP 1006 (2010) 043\\ 
+	\texttt{arXiv:1002.2581}
+	\end{itemize}
+	
+\bibitem{pythia}
+	\textit{PYTHIA 8.1}\\
+	\textbf{T. Sjöstrand, S. Mrenna and P. Skands}\\
+	JHEP05 (2006) 026, Comput. Phys. Comm. 178 (2008) 852. 
+	
+\bibitem{evtgen}
+	\textit{The EvtGen particle decay simulation package}\\
+	\textbf{D. J. Lange}\\
+	Nucl. Instrum. Meth. A462, 152 (2001)
+	
+\bibitem{frixione}
+	\textit{Isolated photons in perturbative QCD}\\	
+	\textbf{S. Frixione}\\
+	Phys. Lett.B429(1998)369–374, hep-ph/9801442
+	
+	
 \end{thebibliography}
 
 \end{document}
