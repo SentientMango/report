@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  6 OCT 2017 11:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  8 NOV 2017 16:30
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -606,20 +606,20 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 (./Thesis_report.aux)
 \openout1 = `Thesis_report.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 26.
-LaTeX Font Info:    ... okay on input line 26.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 29.
+LaTeX Font Info:    ... okay on input line 29.
 
 (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -688,7 +688,7 @@ Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
 \AtBeginShipoutBox=\box31
-Package hyperref Info: Link coloring OFF on input line 26.
+Package hyperref Info: Link coloring OFF on input line 29.
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2012/10/27 v2.43 Cross-referencing by name of section
 
@@ -697,26 +697,26 @@ Package: gettitlestring 2010/12/03 v1.4 Cleanup title references (HO)
 )
 \c@section@level=\count124
 )
-LaTeX Info: Redefining \ref on input line 26.
-LaTeX Info: Redefining \pageref on input line 26.
-LaTeX Info: Redefining \nameref on input line 26.
+LaTeX Info: Redefining \ref on input line 29.
+LaTeX Info: Redefining \pageref on input line 29.
+LaTeX Info: Redefining \nameref on input line 29.
 
 (./Thesis_report.out) (./Thesis_report.out)
 \@outlinefile=\write3
 \openout3 = `Thesis_report.out'.
 
 
-<Title_Head.png, id=36, 898.85812pt x 127.97812pt>
+<Title_Head.png, id=48, 898.85812pt x 127.97812pt>
 File: Title_Head.png Graphic file (type png)
  <use Title_Head.png>
-Package pdftex.def Info: Title_Head.png used on input line 31.
+Package pdftex.def Info: Title_Head.png used on input line 34.
 (pdftex.def)             Requested size: 483.69684pt x 68.86891pt.
-LaTeX Font Info:    Try loading font information for U+msa on input line 33.
+LaTeX Font Info:    Try loading font information for U+msa on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 33.
+LaTeX Font Info:    Try loading font information for U+msb on input line 36.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -731,129 +731,161 @@ pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has
 been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.42 \newpage
+l.49 \newpage
               [1
 
-] <HZ.png, id=62, 285.31593pt x 188.95593pt>
+] <HZ.png, id=79, 285.31593pt x 188.95593pt>
 File: HZ.png Graphic file (type png)
  <use HZ.png>
-Package pdftex.def Info: HZ.png used on input line 58.
+Package pdftex.def Info: HZ.png used on input line 65.
 (pdftex.def)             Requested size: 199.71979pt x 132.26823pt.
 
-<ZZ.png, id=63, 581.92406pt x 176.91093pt>
+<ZZ.png, id=80, 581.92406pt x 176.91093pt>
 File: ZZ.png Graphic file (type png)
  <use ZZ.png>
-Package pdftex.def Info: ZZ.png used on input line 68.
+Package pdftex.def Info: ZZ.png used on input line 75.
 (pdftex.def)             Requested size: 290.96132pt x 88.45525pt.
- [2 <./HZ.png> <./ZZ.png>] <Zg.png, id=79, 796.47563pt x 122.70844pt>
+ [2 <./HZ.png> <./ZZ.png>] <Zg.png, id=96, 796.47563pt x 122.70844pt>
 File: Zg.png Graphic file (type png)
  <use Zg.png>
-Package pdftex.def Info: Zg.png used on input line 88.
+Package pdftex.def Info: Zg.png used on input line 95.
 (pdftex.def)             Requested size: 483.69684pt x 74.52061pt.
  [3 <./Zg.png>]
-<paper_Rplot.png, id=94, 398.23781pt x 399.74344pt>
+<paper_Rplot.png, id=111, 398.23781pt x 399.74344pt>
 File: paper_Rplot.png Graphic file (type png)
  <use paper_Rplot.png>
-Package pdftex.def Info: paper_Rplot.png used on input line 121.
+Package pdftex.def Info: paper_Rplot.png used on input line 128.
 (pdftex.def)             Requested size: 199.11841pt x 199.87122pt.
 
-[4 <./paper_Rplot.png>] <ZZ_xsec.png, id=116, 1859.94875pt x 1153.30875pt>
+[4 <./paper_Rplot.png>] <ZZ_xsec.png, id=135, 1859.94875pt x 1153.30875pt>
 File: ZZ_xsec.png Graphic file (type png)
 
 <use ZZ_xsec.png>
-Package pdftex.def Info: ZZ_xsec.png used on input line 174.
+Package pdftex.def Info: ZZ_xsec.png used on input line 204.
 (pdftex.def)             Requested size: 237.0141pt x 146.96132pt.
- <Zg_xsec.png, id=117, 1859.94875pt x 1153.30875pt>
+ <Zg_xsec.png, id=136, 1859.94875pt x 1153.30875pt>
 File: Zg_xsec.png Graphic file (type png)
 
 <use Zg_xsec.png>
-Package pdftex.def Info: Zg_xsec.png used on input line 178.
+Package pdftex.def Info: Zg_xsec.png used on input line 208.
 (pdftex.def)             Requested size: 237.0141pt x 146.96132pt.
- <Ratio_default.png, id=119, 505.13719pt x 362.10281pt>
+ [5] <Ratio_default.png, id=148, 505.13719pt x 362.10281pt>
 File: Ratio_default.png Graphic file (type png)
 
 <use Ratio_default.png>
-Package pdftex.def Info: Ratio_default.png used on input line 189.
+Package pdftex.def Info: Ratio_default.png used on input line 219.
 (pdftex.def)             Requested size: 353.59361pt x 253.47023pt.
- [5 <./ZZ_xsec.png> <./Zg_xsec.png>]
-<Ratio_with_BR.png, id=130, 1859.94875pt x 1153.30875pt>
+
+<Ratio_with_BR.png, id=151, 1859.94875pt x 1153.30875pt>
 File: Ratio_with_BR.png Graphic file (type png)
 
 <use Ratio_with_BR.png>
-Package pdftex.def Info: Ratio_with_BR.png used on input line 196.
+Package pdftex.def Info: Ratio_with_BR.png used on input line 226.
 (pdftex.def)             Requested size: 338.5863pt x 209.94475pt.
- <lep_cuts.png, id=133, 547.2947pt x 381.67593pt>
+ [6 <./ZZ_xsec.png> <./Zg_xsec.png> <./Ratio_default.png>] <lep_cuts.png, id=16
+1, 547.2947pt x 381.67593pt>
 File: lep_cuts.png Graphic file (type png)
-
-<use lep_cuts.png>
-Package pdftex.def Info: lep_cuts.png used on input line 205.
+ <use lep_cuts.png>
+Package pdftex.def Info: lep_cuts.png used on input line 235.
 (pdftex.def)             Requested size: 338.5863pt x 236.12994pt.
- [6 <./Ratio_default.png> <./Ratio_with_BR.png>]
-<scale/nlo_scale_overlay.png, id=142, 1233.85968pt x 861.2175pt>
+
+<scale/nlo_scale_overlay.png, id=163, 1233.85968pt x 861.2175pt>
 File: scale/nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/nlo_scale_overlay.png>
-Package pdftex.def Info: scale/nlo_scale_overlay.png used on input line 215.
+Package pdftex.def Info: scale/nlo_scale_overlay.png used on input line 245.
 (pdftex.def)             Requested size: 386.95894pt x 270.0891pt.
-
-<scale/ggonly_nlo_scale_overlay.png, id=144, 1233.85968pt x 892.83563pt>
+ [7 <./Ratio_with_BR.png> <./lep_cuts.png>]
+<scale/ggonly_nlo_scale_overlay.png, id=172, 1233.85968pt x 892.83563pt>
 File: scale/ggonly_nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/ggonly_nlo_scale_overlay.png>
 Package pdftex.def Info: scale/ggonly_nlo_scale_overlay.png used on input line 
-225.
+255.
 (pdftex.def)             Requested size: 237.0141pt x 171.50696pt.
 
-<scale/omitgg_nlo_scale_overlay.png, id=145, 1226.33156pt x 877.02657pt>
+<scale/omitgg_nlo_scale_overlay.png, id=173, 1226.33156pt x 877.02657pt>
 File: scale/omitgg_nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/omitgg_nlo_scale_overlay.png>
 Package pdftex.def Info: scale/omitgg_nlo_scale_overlay.png used on input line 
-229.
+259.
 (pdftex.def)             Requested size: 237.0141pt x 169.5006pt.
- [7 <./lep_cuts.png> <./scale/nlo_scale_overlay.png>] <PDF4_30_overlay.png, id=
-153, 673.76718pt x 379.4175pt>
+
+<PDF4_30_overlay.png, id=176, 673.76718pt x 379.4175pt>
 File: PDF4_30_overlay.png Graphic file (type png)
 
 <use PDF4_30_overlay.png>
-Package pdftex.def Info: PDF4_30_overlay.png used on input line 241.
+Package pdftex.def Info: PDF4_30_overlay.png used on input line 271.
 (pdftex.def)             Requested size: 386.95894pt x 217.90863pt.
- [8 <./scale/ggonly_nlo_scale_overlay.png> <./scale/omitgg_nlo_scale_overlay.pn
-g> <./PDF4_30_overlay.png>]
-<PDF4_CT14_comp.png, id=169, 607.51968pt x 418.56375pt>
+ [8 <./scale/nlo_scale_overlay.png> <./scale/ggonly_nlo_scale_overlay.png> <./s
+cale/omitgg_nlo_scale_overlay.png>]
+<PDF4_CT14_comp.png, id=189, 607.51968pt x 418.56375pt>
 File: PDF4_CT14_comp.png Graphic file (type png)
 
 <use PDF4_CT14_comp.png>
-Package pdftex.def Info: PDF4_CT14_comp.png used on input line 252.
+Package pdftex.def Info: PDF4_CT14_comp.png used on input line 282.
 (pdftex.def)             Requested size: 290.22105pt x 199.95668pt.
- <gg_PDF4.png, id=174, 2553.54pt x 891.33pt>
+ <gg_PDF4.png, id=194, 2553.54pt x 891.33pt>
 File: gg_PDF4.png Graphic file (type png)
 
 <use gg_PDF4.png>
-Package pdftex.def Info: gg_PDF4.png used on input line 260.
+Package pdftex.def Info: gg_PDF4.png used on input line 290.
 (pdftex.def)             Requested size: 483.69684pt x 168.83763pt.
- [9 <./PDF4_CT14_comp.png> <./gg_PDF4.png>] [10]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 302.
- [11
+ [9 <./PDF4_30_overlay.png> <./PDF4_CT14_comp.png>]
+<PDF_100_unc.png, id=206, 800.9925pt x 575.14874pt>
+File: PDF_100_unc.png Graphic file (type png)
+ <use PDF_100_unc.png>
+Package pdftex.def Info: PDF_100_unc.png used on input line 299.
+(pdftex.def)             Requested size: 338.5863pt x 243.12296pt.
+
+[10 <./gg_PDF4.png> <./PDF_100_unc.png>]
+<frag.png, id=218, 1859.94875pt x 1153.30875pt>
+File: frag.png Graphic file (type png)
+ <use frag.png>
+Package pdftex.def Info: frag.png used on input line 327.
+(pdftex.def)             Requested size: 483.69684pt x 299.9236pt.
+ [11 <./frag.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 349.
+
+ (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
+File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 349.
+
+<MCFM_xAOD_ZZ_xsec.png, id=237, 1859.94875pt x 1153.30875pt>
+File: MCFM_xAOD_ZZ_xsec.png Graphic file (type png)
+
+<use MCFM_xAOD_ZZ_xsec.png>
+Package pdftex.def Info: MCFM_xAOD_ZZ_xsec.png used on input line 376.
+(pdftex.def)             Requested size: 483.69684pt x 299.9236pt.
+ [12] [13 <./MCFM_xAOD_ZZ_xsec.png>] [14
 
 ]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 302.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 457.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 457.
 
 (./Thesis_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 302.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 302.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 457.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 457.
 Package rerunfilecheck Info: File `Thesis_report.out' has not changed.
-(rerunfilecheck)             Checksum: EF6C0448D2A4F37E9E4222C5D9B03FA2;440.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 302.
+(rerunfilecheck)             Checksum: D89CEDA0C870EE2C2960042C2EFEE5E9;681.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 457.
  ) 
 Here is how much of TeX's memory you used:
- 8017 strings out of 494860
- 117658 string characters out of 6177602
- 214246 words of memory out of 5000000
- 11161 multiletter control sequences out of 15000+600000
- 18509 words of font info for 72 fonts, out of 8000000 for 9000
+ 8091 strings out of 494860
+ 118833 string characters out of 6177602
+ 214718 words of memory out of 5000000
+ 11206 multiletter control sequences out of 15000+600000
+ 18816 words of font info for 73 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
- 36i,13n,42p,819b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,16n,42p,819b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texl
@@ -869,13 +901,14 @@ mr17.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb
 hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dis
-t/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts
-/type1/public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1
-/public/amsfonts/cm/cmtt10.pfb>
-Output written on Thesis_report.pdf (12 pages, 781891 bytes).
+t/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/
+public/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public
+/amsfonts/cm/cmtt10.pfb>
+Output written on Thesis_report.pdf (16 pages, 896661 bytes).
 PDF statistics:
- 270 PDF objects out of 1000 (max. 8388607)
- 213 compressed objects within 3 object streams
- 52 named destinations out of 1000 (max. 500000)
- 145 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 347 PDF objects out of 1000 (max. 8388607)
+ 280 compressed objects within 3 object streams
+ 75 named destinations out of 1000 (max. 500000)
+ 184 words of extra memory for PDF output out of 10000 (max. 10000000)
 

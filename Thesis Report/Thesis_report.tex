@@ -1,4 +1,4 @@
-\documentclass[11pt,a4paper,final]{report}
+ \documentclass[11pt,a4paper,final]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -35,8 +35,12 @@
 \vspace{1 in}\\
 {\huge Estimation of $ZZ \rightarrow ll\nu\nu$ background using $Z(\rightarrow ll)+\gamma$ data}
 \vfill
-{\LARGE Mangesh Sonawane \\ Supervisor: Dr. Beate Heinemann}
+{\LARGE\textbf{Mid Year Report - November 2017}}
 \vfill
+{\LARGE Mangesh Sonawane\\}
+\vspace{0.25cm}
+{\LARGE Supervisor: Dr. Beate Heinemann\\}
+\vspace{0.5cm}
 {\LARGE June 2017 - May 2018}
 \vfill
 \vfill
@@ -158,7 +162,7 @@ The samples are generated using MCFM v8.0 for the following data points\footnote
 	\text{For } Z(\rightarrow ee)+\gamma &: p_T(\gamma) > \{50,75,100,125,150,200,250,300,400,500\}\text{ GeV}
 \end{align*}
 
-The following generator level cuts are used for the first run of $ZZ$ and $Z+\gamma$ processes\footnote{All lepton cuts are consistent with the ones used in the ATLAS Z+MET analysis}
+The following generator level cuts are used for the of $ZZ$ and $Z+\gamma$ processes\footnote{All lepton cuts are consistent with the ones used in the ATLAS Z+MET analysis}
 \begin{table}[H]
 \begin{center}
 	\begin{tabular}{|c|c|c|}
@@ -289,23 +293,31 @@ where $N_{mem}$ is the number of member sets in the group, in this case, 30. The
 \end{figure}
 The $gg$ contributions differ by a factor of 10. This curve appears to reach an a constant value at a higher $p_T$ value than the ratio curve constructed from the total cross section. The gluon gluon process is of interest, thus it has also been compared to the reference \texttt{CT14.NN} set.
 
+Figure \ref{fig:pdfcompare_100} shows the uncertainties obtained from the PDF sets belonging to the \texttt{PDF4LHC15\_nlo\_100} group.
+\begin{figure}[H]
+\centering
+	\includegraphics[width=0.7\textwidth]{PDF_100_unc.png}
+	\caption{$R$ curve plotted with uncertainties calculated using Equation \ref{eq:PDFerr} from the PDF sets in the \texttt{PDF4LHC15\_nlo\_100} group. The uncertainty does not exceed 1.5\%.}
+	\label{fig:pdfcompare_100}
+\end{figure}
+This is a more accurate calculation, as there are 100 sets, and constrains the uncertainty even further.
+
 \subsubsection{Photon Fragmentation}
-The \Zgam process may contain photons that arise from the hadron showers. It is therefore important to isolate the photon that arises from the hard vertex from hadronic activity. This reduces unwanted background from pion decays, or fragmentation processes.
+The \Zgam process may contain photons that arise from the hadron showers. It is therefore important to isolate the prompt photon from hadronic activity. This reduces unwanted background from pion decays, or fragmentation processes.
 
 Experimentally, photon isolation is implemented with the following cuts:
 \begin{equation}
-\sum_{\in R_0} E_T(had) < \epsilon_h p_T^\gamma \text{\hspace{1cm} or \hspace{1cm}} \sum_{\in R_0} E_T(had) < E_T^{max}
+\sum_{\in R_0} E_T(\text{had}) < \epsilon_h p_T^\gamma \text{\hspace{1cm} or \hspace{1cm}} \sum_{\in R_0} E_T(\text{had}) < E_T^{max}
 \end{equation}
 \label{eq:photon_isol}
 limiting the transverse hadronic energy $E_T(had)$ in a cone of size $R_0 = \sqrt{\Delta\eta^2 + \Delta\phi^2}$ around the photon, to some fraction of the photon $p_T$, or some fixed small cut-off.
 
 The smooth cone isolation method of Frixione \cite{frixione} is an alternative isolation procedure, which simplifies calculations by avoiding fragmentation contribuitions. The following isolation prescription is applied to the photon:
 \begin{equation}
-	\sum_{R_{j\gamma} \in R_0} E_T(had) < \epsilon_h p_T^\gamma \left(\frac{1-\cos R_{j\gamma}}{1-\cos R_0}\right)^n.
+	\sum_{R_{j\gamma} \in R_0} E_T(\text{had}) < \epsilon_h p_T^\gamma \left(\frac{1-\cos R_{j\gamma}}{1-\cos R_0}\right)^n.
 \end{equation}
 \label{eq:frix_isol}
-where $R_{j\gamma}$ is the separation of the photon and the $j^{th}$ hadron.\\
-This requirement constrains the sum of hadronic energy inside a cone of radius $R_{j\gamma}$, for all separations $R_{j\gamma}$ less than a chosen cone size $R_0$. This prescription allows soft radiation inside the photon cone, but collinear singularities are removed. The smooth cone isolation is infrared finite, thus fragmentation contributions do not need to be included in this case.\\
+where $R_{j\gamma}$ is the separation of the photon and the $j^{th}$ hadron. This requirement constrains the sum of hadronic energy inside a cone of radius $R_{j\gamma}$, for all separations $R_{j\gamma}$ less than a chosen cone size $R_0$. This prescription allows soft radiation inside the photon cone, but collinear singularities are removed. The smooth cone isolation is infrared finite, thus fragmentation contributions do not need to be included.\\
 Smooth isolation is difficult to implement experimentally, however, we wish to look at both methods to compute the uncertainty due to photon fragmentation.
 
 In this analysis, $R_0$ is chosen to be 0.4. The central value is chosen is chosen to be from the sample using smooth cone isolation (Frixione) with $\epsilon_h = 0.075$ and $n=1$. The comparisons with variations to these two variables is shown in Figure \ref{fig:photon_frag}.
@@ -313,7 +325,7 @@ In this analysis, $R_0$ is chosen to be 0.4. The central value is chosen is chos
 \begin{figure}[H]
 \centering
 	\includegraphics[width=\textwidth]{frag.png}
-	\caption{$R$ curve plotting as a function of $p_T$, showing the uncertainty due to variation of photon isolation parameters $\epsilon_h$ and $n$ in the smooth cone isolation procedure (Frixione) and $\epsilon_h$ in the photon isolation procedure.}
+	\caption{$R$ curve as a function of $p_T$, showing the uncertainty due to variation of photon isolation parameters $\epsilon_h$ and $n$ in the smooth cone isolation procedure (Frixione), and $\epsilon_h$ in the photon isolation procedure. The lower panel shows the relative deviation of the varied sets from the central curve, as well as the uncertainty band.}
 	\label{fig:photon_frag}
 \end{figure}
 
@@ -324,21 +336,22 @@ The uncertainty is calculated in the following manner:
 \delta R &= \sqrt{\max_{i=1,2,3}(\delta R_i)^2 + (\delta R_4)^2}
 \end{split}
 \end{equation}
-An uncertainty less than 4\% is observed over the full range, and $< 2\%$ around $R = 0.42$ at $p_T = 100$ GeV. 
+as the Frixione procedure and the experimental photon isolation procedure are assumed to be independent.\\
+An uncertainty is $< 2\%$ over the whole range, which has been extended up till 800 GeV.
 
 \subsection*{Monte Carlo samples - Truth}
 \label{subsec:MC_truth}
 \addcontentsline{toc}{subsection}{\nameref{subsec:MC_truth}}
-The next step would be to implement the analysis to Monte Carlo samples giving event information at the truth level. For this purpose, $ZZ\rightarrow ll\nu\nu$ and $Z\gamma \rightarrow ll\gamma$ events are generated using EvtGen, converted into Derived xAOD after simulation and reconstruction of the event using pythia and powheg. This sample contains truth level information of the particles in the TRUTH3 format.\\
+The next step would be to implement the analysis to Monte Carlo samples giving event information at the truth level. For this purpose, $ZZ\rightarrow ll\nu\nu$ and $Z\gamma \rightarrow ll\gamma$ events are generated using EvtGen\cite{evtgen}, converted into Derived xAOD after simulation and reconstruction of the event using PYTHIA \cite{pythia} and POWHEG \cite{powheg}. This sample contains truth level information of the particles in the TRUTH3 format.\\
 The analysis and comparison to MCFM results has been implemented on the \ZZ process. The cuts on the lepton $p_T$ and $\eta$, as well as the dilepton mass window are as stated in Table \ref{table:default}. For the comparison, only Truth Electrons have been considered, for the analysis on the MCFM and the DxAOD samples to be as identical as possible.\\
 There are some notable differences between the analysis done with MCFM and the DxAOD sample.
 \begin{itemize}
-	\item The DxAOD sample is made using a combination of the "enter sets" PDF sets. This corresponds to the \texttt{PDF4LHC15\_nlo} sets in MCFM.
+	\item The DxAOD sample is made using a combination of the \texttt{CT10nlo} (0-52), \texttt{MSTW2008nlo68cl} and \texttt{NNPDF3.0} PDF sets. This corresponds nearly to the \texttt{PDF4LHC15\_nlo} sets in MCFM (which uses CT14nnlo, ).
 	\item The DxAOD sample consists of contributions from $qq$ and $qg$ processes. The $gg$ process is absent.
 \end{itemize}
 Thus, an MCFM sample is generated, with the PDF set \texttt{PDF4LHC15\_nlo\_100}, and the \texttt{omitgg} switch turned on in the steering file.
 
-Table \ref{table:xAOD_MCFM_compare} shows the comparison of the effective cross section for the \ZZ process\footnote{The analysis and comparison has only been implemented for the \ZZ process for the moment.} as a function of minimum $p_T^{miss}$.
+Table \ref{table:xAOD_MCFM_ZZ_compare} shows the comparison of the effective cross section for the \ZZ process\footnote{The analysis and comparison has only been implemented for the \ZZ process for the moment.} as a function of minimum $p_T^{miss}$.
 
 \begin{table}[H]
 	\centering
@@ -346,23 +359,34 @@ Table \ref{table:xAOD_MCFM_compare} shows the comparison of the effective cross 
 	\hline
 	Min $p_T^{miss}$ [GeV] & MCFM Cross section [fb] & xAOD Cross section [fb]\\
 	\hline
-	0 & 99.45 $\pm$ 0.13 & 101.17\\
-	50 & 49.95 $\pm$ 0.9 & 49.86\\
-	100 & 16.69 $\pm$ 0.3 & 15.73\\
-	300 & 0.85 $\pm$ 0.13 & 0.69\\
+	0 & 99.45 $\pm$ 0.8 & 101.17\\
+	50 & 49.95 $\pm$ 0.4 & 49.86\\
+	100 & 16.86 $\pm$ 0.12 & 15.73\\
+	300 & 0.89 $\pm$ 0.008 & 0.69\\
 	\hline
 	\end{tabular}
 	\caption{A comparison of the cross section calculated as per equation \ref{eq:xAOD_xsec_frac} from the xAOD sample, to the cross section obtained from MCFM for the \ZZ process. The contribution from $gg$ process is excluded from both samples}
-	\label{table:xAOD_MCFM_compare}
+	\label{table:xAOD_MCFM_ZZ_compare}
 \end{table}
 
-\section{Conclusion}
-We propose a new method quantify the uncertainty from sources such as renormalization and factorization scales and different PDF distributions. From these, we observe that at high $p_T$, the value of $R$ approaches $0.47$. The uncertainty is quantified for $p_T > 100$ GeV slice to be $\approx 2\%$ from scale variation, and $\approx 2.55\%$ from PDF variation, around $R = 0.40$.
+The difference between the xAOD sample and the MCFM sample is 1.7\% at low $p_T^{miss}$, but is significantly larger at high $p_T$ due to inadequate statistics. A comparison of the normalized \ZZ $p_T(Z\rightarrow\nu\nu)$ distribution, as shown in Figure \ref{fig:MCFM_xAOD_ZZ_xsec}, displays good agreement in the low $p_T$ region.
 
-It remains to observe the effects of photon fragmentation, and to take a closer look at $gg$, $q\bar{q}$ and $qg$ contributions to this ratio for \texttt{CT14.NN} as well as \texttt{PDF4LHC15\_nlo\_30} sets. In order to improve the uncertainty, we will run over the \texttt{PDF4LHC15\_nlo\_100} sets.
+\begin{figure}[H]
+\centering
+	\includegraphics[width=\textwidth]{MCFM_xAOD_ZZ_xsec.png}
+	\caption{A comparison of the normalized $p_T(Z\rightarrow\nu\nu)$ spectra from the MCFM and xAOD samples. The shapes agree well in the low $p_T$ region. The high $p_T$ regions suffer from a lack of statistics.}
+	\label{fig:MCFM_xAOD_ZZ_xsec}
+\end{figure}
+
+\section{Conclusion}
+We propose a new method quantify the uncertainty from sources such as renormalization and factorization scales and different PDF distributions. From these, we observe that at high $p_T$, the value of $R$ approaches $0.47$. The uncertainty is quantified for $p_T > 100$ GeV slice to be $\approx 2\%$ from scale variation, and $\approx 2.55\%$ from PDF variation, around $R = 0.40$. The PDF uncertainty is constrained further by using the sets in the \texttt{PDF4LHC15\_nlo\_100} group, to $<1.5\%$. The uncertainty due to photon fragmentation is $<2\%$ for the full $p_T$ range, up to 800 GeV.
+
+Moving from raw cross sections to Monte Carlo event samples, we see a good agreement in the low $p_T$ region for the \ZZ process. A deviation of 2\% is observed in this region, which fits within the uncertainty limits obtained thus far. In the high $p_T$ region, better statistics are required.
+
+It remains to observe the effects of $gg$ and $q\bar{q}$ processes separately. Also remaining is to implement the analysis on the \Zgam xAOD samples, to verify agreement, and compare the resulting $R$ curves with the $R$ curves from MCFM.
 
 \section*{Acknowlegements}
-This work was conducted under the patient supervision of Dr. Beate Heinemann. In addition to her guidance and advice, I had the help of Dr. Yee Chinn Yapp and Dr. Pieter Everaerts, who helped me work on streamlining the presentation of this work, and Dr. Sarah Heim, whose office is close enough to mine that I could bother her for the tiniest of details.
+This work was conducted under the patient supervision of Dr. Beate Heinemann. In addition to her guidance and advice, I had the help of Dr. Yee Chinn Yapp, who helped me work on streamlining the presentation of this work; Dr. Pieter Everaerts, who helped me debug the code and understand the physics better, and Dr. Sarah Heim, whose office is close enough to mine that I could bother her for the tiniest of details.
 
 \begin{thebibliography}{9}
 \bibitem{gammajet}
@@ -394,28 +418,33 @@ Cavendish Laboratory, University of Cambridge, CB3 0HE, UK; 2011\\
 	\textit{ATHENA reference}\\
 	\texttt{ATHENA reference}
 	
+\bibitem{evtgen}
+	\textit{The EvtGen particle decay simulation package}\\
+	\textbf{D. J. Lange}\\
+	Nucl. Instrum. Meth. A462, 152 (2001)
+	
 \bibitem{powheg}
-	POWHEG BOX
+	POWHEG BOX - ZZ,WZ and WW production
 	\begin{itemize}
 	\item \textbf{P. Nason}\\
 	JHEP 0411 (2004) 040, hep-ph/0409146
 	\item \textbf{S. Frixione, P. Nason and C. Oleari}\\
-	JHEP 0711 (2007) 070\\
-	\texttt{arXiv:0709.2092}
+	JHEP 0711 (2007) 070, \texttt{arXiv:0709.2092}
 	\item \textbf{S. Alioli, P. Nason, C. Oleari and E. Re}\\
-	JHEP 1006 (2010) 043\\ 
-	\texttt{arXiv:1002.2581}
+	JHEP 1006 (2010) 043, \texttt{arXiv:1002.2581}
+	\item \textit{ZZ, WZ and W+W- production, including Gamma/Z interference, singly resonant contributions and interference for identical leptons}\\
+	\textbf{T. Melia, P. Nason, R. Rontsch, G. Zanderighi}\\
+	JHEP 1111 (2011) 078, \texttt{arXiv:1107.5051}
+	\item \textit{W+W-, WZ and ZZ production in the POWHEG-BOX-V2}\\
+	\textbf{P. Nason and G. Zanderighi}\\
+	Eur.Phys.J. C74 (2014) 2702, \texttt{arXiv:1311.1365}
 	\end{itemize}
 	
 \bibitem{pythia}
 	\textit{PYTHIA 8.1}\\
 	\textbf{T. Sjöstrand, S. Mrenna and P. Skands}\\
 	JHEP05 (2006) 026, Comput. Phys. Comm. 178 (2008) 852. 
-	
-\bibitem{evtgen}
-	\textit{The EvtGen particle decay simulation package}\\
-	\textbf{D. J. Lange}\\
-	Nucl. Instrum. Meth. A462, 152 (2001)
+
 	
 \bibitem{frixione}
 	\textit{Isolated photons in perturbative QCD}\\	
