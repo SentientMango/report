@@ -51,12 +51,12 @@
 \newpage
 \section*{Abstract}
 \textit{
-In the search for Dark Matter at the LHC, SM particles are produced in association with DM particles, which are invisible as they don't interact with the detector. Thus events with large imbalance in transverse momentum are of interest. One such signature is $ll + E_T^{miss}$. The dominant background contributing to the serach for DM in the $ll + E_T^{miss}$ is $ZZ \rightarrow ll\nu\nu$.  Currently, this background is determined using Monte Carlo simulation, with an uncertainty of $\approx 10\%$ \cite{ZH_ATLAS}. The goal of this study is to establish a data driven method to estimate this background, and reduce the uncertainty. Using \Zgam, which is a process with low backgrounds and has a high $BR*\sigma$, it is possible to estimate the \ZZ contribution. In regions where $p_{T}(\gamma) \gg M_{Z}$, the two processes are kinematically similar. They have the same production mechanisms, but differ due to the photon and Z boson couplings to the quarks being different, as well as the difference in mass (photons are massless, while Z bosons are massive). Introducing a transfer factor $R$, as the ratio $\sigma(ZZ)/\sigma(Z\gamma)$ which is determined by simulation, the contribution of \ZZ to the background can be estimated from \Zgam data. The uncertainty on the prediction of $R$ due to theoretical aspects is estimated in this work.
+In the search for Dark Matter (DM) at the LHC, SM particles are produced in association with DM particles, which are invisible as they don't interact with the detector. Thus events with large imbalance in transverse momentum are of interest. One such signature is $ll + E_T^{miss}$. The dominant background contributing to the search for DM in the $ll + E_T^{miss}$ is $ZZ \rightarrow ll\nu\nu$.  Currently, this background is determined using Monte Carlo simulation, with an uncertainty of $\approx 10\%$ \cite{ZH_ATLAS}. The goal of this study is to establish a data driven method to estimate this background, and reduce the uncertainty. Using \Zgam, which is a process with low backgrounds and has a high $BR*\sigma$, it is possible to estimate the \ZZ contribution. In regions where $p_{T}(\gamma) \gg M_{Z}$, the two processes are kinematically similar. They have the same production mechanisms, but differ due to the photon and Z boson couplings to the quarks being different, as well as the difference in mass (photons are massless, while Z bosons are massive). Introducing a transfer factor $R$ as the ratio $\sigma(ZZ)/\sigma(Z\gamma)$ which is determined from simulation, the contribution of \ZZ to the background can be estimated from \Zgam data. The uncertainty on the prediction of $R$ due to theoretical aspects is estimated in this work.
 }
 
 \section{Introduction}
-Among the candidates for Dark Matter (DM) at the LHC are WIMPs (Weakly Interacting Massive Particles). The signature for WIMPs are events with large missing transverse momentum $E_T^{miss} = -(\sum p_T)$, where the sum is taken over all tracks. One such signal we look at is $ll+E_T^{miss}$. WIMPs do not register in the detector, and thus result in a large missing transverse momentum.\\
-For example, the production of Higgs in association with a $Z$, as shown in Fig.\ref{HZ}, is one possible process giving the $ll+E_T^{miss}$ signature, if the mass of the DM particle is less than half the mass of the Higgs boson.
+Among the candidates for Dark Matter (DM) at the LHC are Weakly Interacting Massive Particles (WIMPs). WIMPs do not register in the detector, and thus will result in large missing transverse momentum $E_T^{miss} = -(\sum p_T)$, where the sum is taken over all reconstructed objects. Thus, one of the signals that may be indicative of WIMPs is $ll+E_T^{miss}$.\\
+For example, the production of Higgs in association with a $Z$, as shown in Fig.\ref{HZ}, is one possible process giving the $ll+E_T^{miss}$ signature, if the mass of the DM particle is less than half the mass of the Higgs boson. Here, the Higgs boson acts as mediator between DM and SM particles.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.7]{HZ.png}
@@ -64,12 +64,13 @@ For example, the production of Higgs in association with a $Z$, as shown in Fig.
 		\label{HZ}
 	\end{center}
 \end{figure}
-The background processes are $ZZ\rightarrow ll\nu\nu$, $WZ\rightarrow lll\nu$,$WW\rightarrow l\nu l\nu$, $Z+$jets and $W+$jets. The dominant source of background is the $ZZ \rightarrow ll\nu\nu$ process, contributing $\approx 60 \%$ of the background. Figure \ref{fig:ZZdiag} shows the production modes of $ZZ$ from $q\bar{q}$ and $gg$ scattering.\\
+The main background processes for the $ll+E_T^{miss}$ final state are $ZZ\rightarrow ll\nu\nu$, $WZ\rightarrow lll\nu$,$WW\rightarrow l\nu l\nu$, $Z+$jets and $W+$jets. The dominant source of background is the $ZZ \rightarrow ll\nu\nu$ process, contributing $\approx 60 \%$ of the background. Figure \ref{fig:ZZdiag} shows the production modes of $ZZ$ from $q\bar{q}$ and $gg$ scattering.\\
 A precise estimate of this process, along with the uncertainty associated with it, is crucial. In current analyses, this is determined using simulation, with an uncertainty of $\approx 10\%$ \cite{ZH_ATLAS}.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{ZZ.png}
-		\caption{Feynman Diagram showing $ZZ$ Production \\ a. \& b. $q\bar{q}\rightarrow ZZ$ \hspace{2 cm} c. $gg\rightarrow ZZ$}
+		\captionsetup{justification=centering}
+		\caption{Feynman Diagram showing $ZZ$ Production \\ a. $q\bar{q}\rightarrow ZZ$, u-channel \hspace{1 cm} b. $q\bar{q}\rightarrow ZZ$, t-channel \hspace{1cm} c. $gg\rightarrow ZZ$}
 		\label{fig:ZZdiag}
 	\end{center}
 \end{figure}
@@ -82,16 +83,22 @@ In addition to having a higher $BR*\sigma$ as compared to \ZZ (2.7\% for \ZZ vs 
 	\begin{center}
 		\includegraphics[width=\linewidth]{Zg.png}
 		\captionsetup{justification=centering}
-		\caption{Feynman Diagram showing $Z+\gamma$ Production\hfill \\ a. \& b. $q\bar{q}\rightarrow Z+\gamma$ \hfill c. $gg\rightarrow Z+\gamma$ \hfill d. Final State Radiation (FSR)}
+		\caption{Feynman Diagram showing $Z+\gamma$ Production} 
+		\begin{tabular}{l}
+		$q\bar{q}\rightarrow Z+\gamma$,u-channel\\ 
+		b. $q\bar{q}\rightarrow Z+\gamma$,t-channel\\ 
+		c. $gg\rightarrow Z+\gamma$ \\ 
+		d. Final State Radiation (FSR)
+		\end{tabular}
 		\label{fig:Zgdiag}
 	\end{center}
 \end{figure}
 \section{Approach}
-Introducing a transfer factor $R(p_T)$, it is defined to be the ratio of the cross sections of \ZZ to \Zgam as a function of $p_T$.
+To estimate the background, a transfer factor $R(p_T)$, it is defined to be the ratio of the cross sections of \ZZ to \Zgam as a function of $p_T$, is introduced.
 \begin{equation}
 	R(p_{T}) = \frac{\sigma_{ZZ}(p_{T})}{\sigma_{Z\gamma}(p_T)}
 \end{equation}
-With the two processes being kinematically similar at high $p_T$, $R$ depends on the coupling of the $Z$ and $\gamma$ to quarks. It would be expected to reach a constant value at high $p_T$ that could be determined theoretically.
+With the two processes being kinematically similar at high $p_T$, $R$ depends on the coupling of the $Z$ and $\gamma$ to quarks. It would be expected to reach a constant value at high $p_T$ that can be determined theoretically.
 
 The photon - quark and $Z$ boson - quark couplings in the Standard Model are given by,
 \begin{equation}
@@ -112,24 +119,22 @@ The $u$ and $d$ quarks present in a $pp$ collision have different coupling stren
 R = \frac{\sigma(u\bar{u}\rightarrow ZZ)\langle u\rangle + \sigma(d\bar{d}\rightarrow ZZ)\langle d\rangle}{\sigma(u\bar{u}\rightarrow Z\gamma)\langle u\rangle + \sigma(d\bar{d}\rightarrow Z\gamma)\langle d\rangle}
 \label{eq:u_d_contrib}
 \end{equation}
-
-Pluggin in the required values, and setting $\sin^2\theta_W = 0.2315$, at moderate $p_T$ values, $R\approx 1.28$.
+Using the vector and axial couplings of the $Z$ boson to $u$ and $d$ quarks, and setting $\sin^2\theta_W = 0.2315$, at moderate $p_T$ values, $R\approx 1.28$ for the dominant $qq$ interaction.
 
 \subsection*{Theoretical determination of MCFM cross sections}
-A Monte Carlo program, MCFM v8.0 \cite{MCFM} at NLO is used to generate cross sections of \ZZ and \Zgam processes, with a selection of generator level cuts. The samples are generated with cuts on $E_{T,min}^{miss}$ for the $ZZ$ process $p_{T,min}(\gamma)$ for the $Z+\gamma$ process. A ratio of these cross sections is taken to obtain the $R$ distribution as a function of $p_T$. The uncertainty on $R$ is calculated by varying several parameters at the generator level, such as the renormalization and factorization scales, the PDF sets used, photon fragmentation, etc. Effects of applying lepton cuts on the cross sections as well as the ratio, and the contributions of the $q \bar{q}$ and $gg$ processes are also studied.
+A Monte Carlo program, MCFM v8.0 \cite{MCFM} at NLO is used to generate cross sections of \ZZ and \Zgam processes, with a selection of generator level cuts. The samples are generated with cuts on $E_T^{miss} = p_T(Z\to \nu\nu)$ for the $ZZ$ process and $E_T^{miss} = p_T(\gamma)$ for the $Z+\gamma$ process. A ratio of these cross sections is taken to obtain the $R$ distribution as a function of $p_T$. The uncertainty on $R$ is calculated by varying several parameters at the generator level, such as the renormalization and factorization scales, the PDF sets used, photon fragmentation, etc. Effects of applying lepton cuts on the cross sections and the ratio are studied. The contributions of the $q \bar{q}$ and $gg$ processes are estimated separately.
 
-However, the MCFM generator only produces $Z\rightarrow ee$ instead of $Z\rightarrow ll$. Thus, this branching ratio needs to be accounted for to obtain the value of $R$.
+MCFM does not generate $Z\rightarrow ll$ but $Z\rightarrow ee$. As electrons and muons have similar properties with the exception of mass, simply the branching fraction of $Z\rightarrow ee$ must be accounted for to obtain the value of $R$.
 \begin{equation}\label{eq:R_inc}
 	R_{inc} = R * \frac{BR(Z\rightarrow ee)}{BR(Z \rightarrow ee)*BR(Z\rightarrow \nu\nu)*2}
 \end{equation}
 
 \section{Generator Parameters}
-The samples are generated using MCFM v8.0 for the following data points\footnote{MCFM does not generate $Z\rightarrow ll$ but $Z\rightarrow ee$. As electrons and muons have similar properties with the exception of mass, simply the branching fraction of $Z\rightarrow ee$ must be accounted for at a later stage.}
+The samples are generated using MCFM v8.0 for the following data points:
 \begin{align*}
 	\text{For } ZZ \rightarrow ee\nu\nu &: E_T^{miss} > \{50,75,100,125,150,200,250,300,400,500\}\text{ GeV} \\
 	\text{For } Z(\rightarrow ee)+\gamma &: p_T(\gamma) > \{50,75,100,125,150,200,250,300,400,500\}\text{ GeV}
 \end{align*}
-
 Table \ref{table:default} lists the generator level settings used for the $ZZ$ and $Z+\gamma$ processes. All lepton cuts are consistent with the ones used in the ATLAS Z+MET analysis.
 \begin{table}[H]
 \begin{center}
@@ -157,8 +162,7 @@ Table \ref{table:default} lists the generator level settings used for the $ZZ$ a
 \end{table}
 The constraint on $M_{ee}$ in the case of $Z+\gamma$ suppresses the FSR process by ensuring that the lepton pair are from a $Z$ decay only.
 \section{Results}
-Upon running the steering file with the parameters described above, the cross sections shown in Figure \ref{xsecs} are obtained. Throughout this analysis, this sample is the reference.
-
+Using the parameters listed in Table \ref{table:default}, the cross sections shown in Figure \ref{xsecs} are obtained. Throughout this analysis, this sample is the reference.
 \begin{figure}[H]
 \centering
 	\begin{subfigure}{0.49\textwidth}
@@ -174,14 +178,13 @@ Upon running the steering file with the parameters described above, the cross se
 	\caption{Cross sections of $ZZ$ and $Z+\gamma$ processes with the cuts as in Table 1. The Y axis is in $\log_{10}$ scale. The leptonically decaying $Z$ boson decays to an $e^+e^-$ pair. There is no flavor constraint on the neutrinos.}
 	\label{xsecs}
 \end{figure}
-The ratio $R = \sigma(ZZ\rightarrow ee\nu\nu)/\sigma(Z\gamma\rightarrow ee\gamma)$ is shown in Figure \ref{fig:Rcurve}
 \begin{figure}[H]
 	\centering
 	\includegraphics[scale=0.7]{Ratio_default.png}
 	\caption{The transfer factor $R$ as a function of $p_T$, taken as a ratio of plots \ref{subfig:ZeeZvv} and \ref{subfig:Zeeg}. The leptonically decaying $Z$ boson decays to an $e^+e^-$ pair.}
 	\label{fig:Rcurve}
 \end{figure}
-The $R$ value is observed to increase from $\approx 0.24$ at 50 GeV to $\approx 0.47$ at high $p_T$, where it is constant. When the branching ratio of $Z$ boson decaying selectively to $e^+e^-$, or to $\nu\nu$, is accounted for as shown in Equation \ref{eq:R_inc}, the resulting ratio $R(p_T)$ is shown in Figure \ref{fig:RcurveBR}, which shows the ratio of $\sigma(ZZ)$ to $\sigma(Z\gamma)$, i.e. if the $Z$ bosons do not decay further. The value of $R$ is observed to increase from $\approx 0.61$ at 50 GeV to $\approx 1.2$ at high $p_T$, as compared to the theoretical prediction of $R \approx 1.28$.
+The ratio $R = \sigma(ZZ\rightarrow ee\nu\nu)/\sigma(Z\gamma\rightarrow ee\gamma)$ is shown in Figure \ref{fig:Rcurve}. The $R$ value is observed to increase from $\approx 0.24$ at 50 GeV to $\approx 0.47$ at high $p_T$, where it is constant. When the branching ratio of $Z$ boson decaying selectively to $e^+e^-$, or to $\nu\nu$, is accounted for as shown in Equation \ref{eq:R_inc}, the resulting ratio $R(p_T)$ is shown in Figure \ref{fig:RcurveBR}, which shows the ratio of $\sigma(ZZ)$ to $\sigma(Z\gamma)$, i.e. if the $Z$ bosons do not decay further. The value of $R$ is observed to increase from $\approx 0.61$ at 50 GeV to $\approx 1.2$ at high $p_T$, as compared to the theoretical prediction of $R \approx 1.28$.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.8\textwidth]{Ratio_with_BR.png}
@@ -211,12 +214,16 @@ The $R_{gg}$ distribution is observed to approach an asymptotic value at a much 
 To check the effects of lepton cuts on the ratio, samples with the same parameters as those in Table \ref{table:default} are generated. However, we relax the cuts on leptons. Both the leading and subleading lepton should have $p_T > 5$ GeV, and $\eta <$ 10. In the lower $p_T$ regions, the cross section falls by nearly half in both processes. The ratio is affected by up to 15\% as seen in Figure \ref{fig:lepcut}, and therefore for all following studies the lepton cuts are applied as they emulate the experimental cuts needed in the analysis.
 \begin{figure}[H]
 \centering
-	\includegraphics[width = 0.7\linewidth]{lep_cuts.png}
+	\includegraphics[width = 0.8\linewidth]{lep_cuts.png}
 	\caption{Comparison of reference the $R$ distribution to the $R$ distribution without lepton cuts}
 	\label{fig:lepcut}
 \end{figure}
 \subsection{Uncertainty from Scale Variation}
-The renormalization and factorization scales are arbitrary parameters that address the UV and IR divergences respectively that arise while calculating cross sections. They are important when considering higher order effects in QCD. To obtain the uncertainties associated to these scales, the renormalization ($\mu_R$) and factorization ($\mu_F$) scales are each varied by a factor of 2 in either direction from the central value, $M_Z = 91.187$ GeV, to obtain the uncertainty as shown in Figure \ref{fig:scalecompare}.
+In higher order QCD calculations, perturbative corrections may be added to the vertices or propagators in a Feynman diagram. Physically, these corrections occur at very small time scales. These loop integrals that correspond to these corrections diverge.\\
+The higher the order, the more difficult the calculation is. It is possible to introduce an arbitrary cut-off scale $\mu$ such that up to a given order, the effect of these corrections can be absorbed into the strong coupling constant $\alpha_s(\mu)$.\\
+Two kinds of divergences are encountered: infrared divergences, and ultraviolet divergences. Infrared divergences occur for an on-shell internal propagator, and ultraviolet divergences are logarithmic divergences that occur as the integration variable approaches $\infty$. They correspond to physics at long and short distances\footnote{Long distances are those where soft interactions take place, away from the hard parton-parton interaction. Short distances are those where the hard parton parton interactions occur.}, respectively. The infrared divergences are addressed by the inclusion of the factorization scale $\mu_F$, while the ultraviolet divergences are addressed by the inclusion of the renormalization scale $\mu_R$. These parameters are arbitrary, and are set by hand. They are then varied between $\frac{1}{2}\mu < \mu < \ 2\mu$ to obtain an indication of the dependence of the matrix element on the scales. In this analysis, we choose the central value for these parameters to be $M_Z = 91.187$ GeV.
+
+To obtain the uncertainties associated to these scales, the renormalization ($\mu_R$) and factorization ($\mu_F$) scales are each varied by a factor of 2 in either direction from the central value, $M_Z = 91.187$ GeV, to obtain the uncertainty as shown in Figure \ref{fig:scalecompare}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{scale/nlo_scale_overlay.png}
@@ -242,7 +249,7 @@ The contributions from the $gg$ subprocess separately from the $q\bar{q}$ and $q
 Variations of up to 3\% are seen at low pt while at high pt the differences are below 1\% for the plots show in Figures \ref{fig:scalecompare} and \ref{fig:gg_scale}
 
 \subsection{Uncertainty from PDF variation}
-The PDF set used for reference is the \texttt{CT14}\cite{CT14} PDF set. The uncertainty on the PDFs is studied by using the 30 variations provided by the \texttt{PDF4LHC15} set\cite{PDF4}, constructed from the combination of \texttt{CT14,MMHT14}\cite{MMHT14} and \texttt{NNPDF3.0}\cite{NNPDF3} PDF sets. These sets are provided by LHAPDF6\cite{LHAPDF}. \texttt{PDF4LHC15} provides a set of variations that include those determined by different groups (MSTW, CTEQ and NNPDF). The group used here is \texttt{PDF4LHC15\_nlo\_30}, consisting of 30 PDF sets. While the most accurate uncertainties are given by \texttt{PDF4LHC15\_nlo\_100} sets, \texttt{PDF4LHC15\_nlo\_30} is used here for a faster, reasonably accurate estimate of the uncertainties.
+Parton Distribution Functions (PDFs) characterize the fraction of proton momentum carried by partons as probability distributions. PDF sets are collections of PDFs that model parton momenta as accurately as possible. The PDF set used for reference is the \texttt{CT14}\cite{CT14} PDF set. The uncertainty on the PDFs is studied by using the 30 variations provided by the \texttt{PDF4LHC15} set\cite{PDF4}, constructed from the combination of \texttt{CT14,MMHT14}\cite{MMHT14} and \texttt{NNPDF3.0}\cite{NNPDF3} PDF sets. These sets are provided by LHAPDF6\cite{LHAPDF}. \texttt{PDF4LHC15} provides a set of variations that include those determined by different groups (MSTW, CTEQ and NNPDF). The set used here is \texttt{PDF4LHC15\_nlo\_30}, consisting of 30 members. While the most accurate uncertainties are given by \texttt{PDF4LHC15\_nlo\_100} set, \texttt{PDF4LHC15\_nlo\_30} is used here for a faster, reasonably accurate estimate of the uncertainties.
 \begin{figure}[H]
 \centering
 	\includegraphics[width = 0.8\linewidth]{PDF4_30_overlay.png}
@@ -257,7 +264,7 @@ where $N_{mem}$ is the number of member sets in the group, in this case, 30. The
 \begin{figure}[H]
 \centering
 	\includegraphics[width = 0.55\linewidth]{PDF4_CT14_comp.png}
-	\caption{The ratio $R(p_T)$ of the \texttt{PDF4LHC15\_nlo\_30} with combined uncertainties as given by Equation \ref{eq:PDFerr} (blue), to the reference constructed from the PDF set \texttt{CT14} (red).}
+	\caption{The ratio $R(p_T)$ calculated using the PDF sets in \texttt{PDF4LHC15\_nlo\_30} with combined uncertainties as given by Equation \ref{eq:PDFerr} (blue), compared to the reference constructed from the PDF set \texttt{CT14} (red).}
 	\label{fig:PDF4_def_compare}
 	\label{pdfcompare}
 \end{figure}
@@ -272,7 +279,7 @@ where $N_{mem}$ is the number of member sets in the group, in this case, 30. The
 %\end{figure}
 %The $gg$ contributions differ by a factor of 10. This curve appears to reach an a constant value at a higher $p_T$ value than the ratio curve constructed from the total cross section. The gluon gluon process is of interest, thus it has also been compared to the reference \texttt{CT14} set.
 
-\subsection{Photon Fragmentation}
+\subsection{Uncertainty from Photon Fragmentation}
 The \Zgam process may contain photons that arise from the hadron showers. It is therefore important to isolate the prompt photon from hadronic activity. This reduces unwanted background from pion decays, or fragmentation processes.
 
 Experimentally, photon isolation is implemented with the following cuts:
@@ -288,9 +295,9 @@ The smooth cone isolation method of Frixione \cite{frixione} is an alternative i
 \end{equation}
 \label{eq:frix_isol}
 where $R_{j\gamma}$ is the separation of the photon and the $j^{th}$ hadron. This requirement constrains the sum of hadronic energy inside a cone of radius $R_{j\gamma}$, for all separations $R_{j\gamma}$ less than a chosen cone size $R_0$. This prescription allows soft radiation inside the photon cone, but collinear singularities are removed. The smooth cone isolation is infrared finite, thus fragmentation contributions do not need to be included.\\
-Smooth isolation is difficult to implement experimentally, however, both methods are explored here, as the different may give a handle on the effects of fragmentation.
+The relative isolation, given by Equation \ref{eq:photon_isol} is used in experimental analyses, while smooth isolation is difficult to implement experimentally. However, comparing both methods gives us an estimate of the uncertainty due to the modelling of photon fragmentation.
 
-In this analysis, $R_0$ is chosen to be 0.4. The central value is chosen to be from the sample using smooth cone isolation (Frixione) with $\epsilon_h = 0.075$ and $n=1$. The comparisons with variations to these two variables is shown in Figure \ref{fig:photon_frag}.
+In this analysis, $R_0$ is chosen to be 0.4 to agree with the experimental definition. The central value is chosen to be from the sample using smooth cone isolation (Frixione) with $\epsilon_h = 0.075$ and $n=1$. These parameters are varied within a reasonable range to assess the uncertainty as shown in Figure \ref{fig:photon_frag}.
 
 \begin{figure}[H]
 \centering
@@ -299,18 +306,18 @@ In this analysis, $R_0$ is chosen to be 0.4. The central value is chosen to be f
 	\label{fig:photon_frag}
 \end{figure}
 
-The uncertainty is calculated in the following manner:
+The uncertainty is calculated from the four sets listed in Figure \ref{fig:photon_frag}:
 \begin{equation}
 \begin{split}
 \delta R_i &= |R_i - R_{ref}| \hspace{2cm}  i \in (1,2,3,4)\\
 \delta R &= \sqrt{\max_{i=1,2,3}(\delta R_i)^2 + (\delta R_4)^2}
 \end{split}
 \end{equation}
-as the Frixione procedure and the experimental photon isolation procedure are assumed to be independent.\\
-An uncertainty is $< 2\%$ over the whole range, which has been extended up till 800 GeV.
+as the effects assessed by changing the isolation definition in set 4, and varying the parameters in sets 1-3 are different.\\
+The uncertainty is $< 2\%$ over the whole range, which has been extended up till 800 GeV.
 
 \section{Conclusion}
-We propose a new method to estimate the \ZZ contribution to the $ll + E_T^{miss}$ signal from \Zgam data, using a transfer factor $R$. We quantify the uncertainty from sources such as renormalization and factorization scales and different PDF distributions.\\From these, we observe that at high $p_T$, the value of $R$ approaches $0.47$, while at $p_T = 100$ GeV, $R = 0.40$. The uncertainty is quantified $\approx 2\%$ from scale variation, and $\approx 2.55\%$ from PDF variation. The uncertainty due to photon fragmentation is $<2\%$ for the full $p_T$ range, up to 800 GeV.
+We propose a new method to estimate the \ZZ contribution to the $ll + E_T^{miss}$ signal from \Zgam data, using a transfer factor $R$, determined by simulation. We quantify the uncertainty from sources such as renormalization and factorization scales and different PDF distributions.\\From these, we observe that at high $p_T$, the value of $R$ approaches $0.47$, while at $p_T = 100$ GeV, $R = 0.40$. The uncertainty is quantified $\approx 2\%$ from scale variation, and $\approx 2.55\%$ from PDF variation. The uncertainty due to photon fragmentation is $<2\%$ for the full $p_T$ range, up to 800 GeV.
 
 \section*{Acknowlegements}
 This work was conducted under the patient supervision of Dr. Beate Heinemann. In addition to her guidance and advice, I had the help of Dr. Yee Chinn Yapp, who helped me work on streamlining the presentation of this work; Dr. Pieter Everaerts, who helped me debug the code and understand the physics better, and Dr. Sarah Heim, whose office is close enough to mine that I could bother her for the tiniest of details.

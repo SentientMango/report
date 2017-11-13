@@ -3,7 +3,7 @@
 \contentsline {section}{\numberline {3}Generator Parameters}{4}{section.0.3}
 \contentsline {section}{\numberline {4}Results}{5}{section.0.4}
 \contentsline {subsection}{\numberline {4.1}Effect of Lepton Cuts}{7}{subsection.0.4.1}
-\contentsline {subsection}{\numberline {4.2}Uncertainty from Scale Variation}{7}{subsection.0.4.2}
+\contentsline {subsection}{\numberline {4.2}Uncertainty from Scale Variation}{8}{subsection.0.4.2}
 \contentsline {subsection}{\numberline {4.3}Uncertainty from PDF variation}{9}{subsection.0.4.3}
-\contentsline {subsection}{\numberline {4.4}Photon Fragmentation}{10}{subsection.0.4.4}
+\contentsline {subsection}{\numberline {4.4}Uncertainty from Photon Fragmentation}{10}{subsection.0.4.4}
 \contentsline {section}{\numberline {5}Conclusion}{11}{section.0.5}
