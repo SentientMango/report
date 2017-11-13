@@ -162,7 +162,7 @@ Table \ref{table:default} lists the generator level settings used for the $ZZ$ a
 \end{table}
 The constraint on $M_{ee}$ in the case of $Z+\gamma$ suppresses the FSR process by ensuring that the lepton pair are from a $Z$ decay only.
 \section{Results}
-Using the parameters listed in Table \ref{table:default}, the cross sections shown in Figure \ref{xsecs} are obtained. Throughout this analysis, this sample is the reference.
+Using the settings listed in Table \ref{table:default}, the cross sections shown in Figure \ref{xsecs} are obtained. Throughout this analysis, this sample is the reference.
 \begin{figure}[H]
 \centering
 	\begin{subfigure}{0.49\textwidth}
@@ -221,9 +221,7 @@ To check the effects of lepton cuts on the ratio, samples with the same paramete
 \subsection{Uncertainty from Scale Variation}
 In higher order QCD calculations, perturbative corrections may be added to the vertices or propagators in a Feynman diagram. Physically, these corrections occur at very small time scales. These loop integrals that correspond to these corrections diverge.\\
 The higher the order, the more difficult the calculation is. It is possible to introduce an arbitrary cut-off scale $\mu$ such that up to a given order, the effect of these corrections can be absorbed into the strong coupling constant $\alpha_s(\mu)$.\\
-Two kinds of divergences are encountered: infrared divergences, and ultraviolet divergences. Infrared divergences occur for an on-shell internal propagator, and ultraviolet divergences are logarithmic divergences that occur as the integration variable approaches $\infty$. They correspond to physics at long and short distances\footnote{Long distances are those where soft interactions take place, away from the hard parton-parton interaction. Short distances are those where the hard parton parton interactions occur.}, respectively. The infrared divergences are addressed by the inclusion of the factorization scale $\mu_F$, while the ultraviolet divergences are addressed by the inclusion of the renormalization scale $\mu_R$. These parameters are arbitrary, and are set by hand. They are then varied between $\frac{1}{2}\mu < \mu < \ 2\mu$ to obtain an indication of the dependence of the matrix element on the scales. In this analysis, we choose the central value for these parameters to be $M_Z = 91.187$ GeV.
-
-To obtain the uncertainties associated to these scales, the renormalization ($\mu_R$) and factorization ($\mu_F$) scales are each varied by a factor of 2 in either direction from the central value, $M_Z = 91.187$ GeV, to obtain the uncertainty as shown in Figure \ref{fig:scalecompare}.
+Two kinds of divergences are encountered: infrared divergences, and ultraviolet divergences. Infrared divergences occur for an on-shell internal propagator, and ultraviolet divergences are logarithmic divergences that occur as the integration variable approaches $\infty$. They correspond to physics at long and short distances\footnote{Long distances are those where soft interactions take place, away from the hard parton-parton interaction. Short distances are those where the hard parton parton interactions occur.}, respectively. The infrared divergences are addressed by the inclusion of the factorization scale $\mu_F$, while the ultraviolet divergences are addressed by the inclusion of the renormalization scale $\mu_R$. These parameters are arbitrary, and are set by hand. These are then varied between $\frac{1}{2}\mu < \mu < \ 2\mu$ to obtain an indication of the dependence of the matrix element on the scales, and thus, the uncertainty around the chosen scale. In this analysis, the central value for these parameters is chosen to be $M_Z = 91.187$ GeV, and the results are shown in Figure \ref{fig:scalecompare}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{scale/nlo_scale_overlay.png}
