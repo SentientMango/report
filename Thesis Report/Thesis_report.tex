@@ -20,6 +20,8 @@
  
 \def\thesection{\arabic{section}}
 
+\setlength{\jot}{5pt}
+
 \newcommand{\ZZ}{$ZZ\rightarrow ll\nu\nu$ }
 \newcommand{\Zgam}{$Z\gamma\rightarrow ll\gamma$ }
 
@@ -49,16 +51,16 @@
 \newpage
 \section*{Abstract}
 \textit{
-In the search for Dark Matter at the LHC, SM particles are produced in association with DM particles, which are invisible as they don't interact with the detector. Thus events with large imbalance in transverse momentum are of interest. One such signature is $ll + E_T^{miss}$. The dominant background contributing to the $ll + E_T^{miss}$ is $ZZ \rightarrow ll\nu\nu$.  Currently, this background is determined using Monte Carlo simulation, with an uncertainty of $\approx 10\%$ \cite{ZH_ATLAS}. The goal of this study is to establish a data driven method to estimate this background, and reduce the uncertainty. Using \Zgam, which is a pure signal and has a high $BR*\sigma$, it is possible to obtain the \ZZ contribution. In regions where $p_{T}(\gamma) \gg M_{Z}$, the two processes are kinematically similar. They have the same production mechanisms, but differ due to the photon and Z boson couplings to the quarks being different, as well as the difference in mass (photons are massless, while Z bosons are massive). Introducing a transfer factor $R$, as the ratio $\sigma(ZZ)/\sigma(Z\gamma)$ which is determined by simulation, the contribution of \ZZ to the background can be estimated from \Zgam data.
+In the search for Dark Matter at the LHC, SM particles are produced in association with DM particles, which are invisible as they don't interact with the detector. Thus events with large imbalance in transverse momentum are of interest. One such signature is $ll + E_T^{miss}$. The dominant background contributing to the serach for DM in the $ll + E_T^{miss}$ is $ZZ \rightarrow ll\nu\nu$.  Currently, this background is determined using Monte Carlo simulation, with an uncertainty of $\approx 10\%$ \cite{ZH_ATLAS}. The goal of this study is to establish a data driven method to estimate this background, and reduce the uncertainty. Using \Zgam, which is a process with low backgrounds and has a high $BR*\sigma$, it is possible to estimate the \ZZ contribution. In regions where $p_{T}(\gamma) \gg M_{Z}$, the two processes are kinematically similar. They have the same production mechanisms, but differ due to the photon and Z boson couplings to the quarks being different, as well as the difference in mass (photons are massless, while Z bosons are massive). Introducing a transfer factor $R$, as the ratio $\sigma(ZZ)/\sigma(Z\gamma)$ which is determined by simulation, the contribution of \ZZ to the background can be estimated from \Zgam data. The uncertainty on the prediction of $R$ due to theoretical aspects is estimated in this work.
 }
 
 \section{Introduction}
-Among the candidates for Dark Matter at the LHC are WIMPs (Weakly Interacting Massive Particles). The signature for WIMPs are events with large missing transverse momentum $E_T^{miss} = -(\sum p_T)$, where the sum is taken over all tracks. One such signal we look at is $ll+E_T^{miss}$. WIMPs do not register in the detector, and thus result in a large missing transverse momentum (also referred to here as MET).\\
-For example, the production of Higgs in association with a $Z$, as shown in Fig.\ref{HZ}, is one possible process giving the $ll+E_T^{miss}$ signature, if the mass of the DM particle is less than half the mass of the Higgs Boson.
+Among the candidates for Dark Matter (DM) at the LHC are WIMPs (Weakly Interacting Massive Particles). The signature for WIMPs are events with large missing transverse momentum $E_T^{miss} = -(\sum p_T)$, where the sum is taken over all tracks. One such signal we look at is $ll+E_T^{miss}$. WIMPs do not register in the detector, and thus result in a large missing transverse momentum.\\
+For example, the production of Higgs in association with a $Z$, as shown in Fig.\ref{HZ}, is one possible process giving the $ll+E_T^{miss}$ signature, if the mass of the DM particle is less than half the mass of the Higgs boson.
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.7]{HZ.png}
-		\caption{Feynman diagram showing the associated production of Higgs. The Higgs boson decays to two invisible DM particles and the Z boson decays leptonically, resulting in the $ll+ E_T^{miss}$ signature.}
+		\caption{Feynman diagram showing the associated production of a Higgs boson with a Z boson. The Higgs boson decays to two invisible DM particles and the Z boson decays leptonically, resulting in the $ll+ E_T^{miss}$ signature.}
 		\label{HZ}
 	\end{center}
 \end{figure}
@@ -74,8 +76,8 @@ A precise estimate of this process, along with the uncertainty associated with i
 
 One method of estimating this contribution is to look at $ZZ\rightarrow llll$, which has a branching fraction of $\approx 0.46 \%$. This is due to the low branching fraction of $Z\rightarrow ll$ \footnote{The branching fraction of $Z$ to any one flavor of lepton is $\approx 3.4\%$, and to neutrinos is $\approx 20\%$.}, and is thus statistically limited. Only electrons and muons are considered here as the leptonic decay products of the $Z$ bosons. In contrast, the branching fraction of \ZZ is 2.7\%, about 6 times higher than $ZZ\rightarrow llll$.
 
-As in earlier analysis that used $\gamma+$jets to calibrate $Z+$jets background \cite{gammajet}, in the region where the mass of the $Z$ boson is negligible to the tranverse momentum $p_T$, the \Zgam process should be kinematically similar to \ZZ as the mass of the $Z$ boson is negligible. Figures \ref{fig:ZZdiag} and \ref{fig:Zgdiag} show the leading order Feynman diagrams for the production of $ZZ$ and $Z+\gamma$ respectively. The diagrams for $q\bar{q}$ and $gg$ (a. b. and c.) are similar. Diagram \ref{fig:Zgdiag}d. corresponds to the production of a single $Z$ boson, with the photon radiated from a final state lepton.\\
-In addition to having a higher $BR*\sigma$ as compared to \ZZ (2.7\% for $ZZ$ vs 6.8\% for $Z\gamma$), the \Zgam signal is also very pure. Thus, it should be possible to use \Zgam data to estimate \ZZ contribution to the background, and obtain a more accurate prediction.
+As in earlier analysis that used $\gamma+$jets to calibrate $Z+$jets background \cite{gammajet}, in high $Z$ boson $p_T$ regions, the \Zgam process should be kinematically similar to \ZZ, as the mass of the $Z$ boson becomes negligible as compared to the high $Z$ boson $p_T$. Figures \ref{fig:ZZdiag} and \ref{fig:Zgdiag} show the leading order Feynman diagrams for the production of $ZZ$ and $Z+\gamma$ respectively. The diagrams for $q\bar{q}$ and $gg$ (a. b. and c.) are similar. Diagram \ref{fig:Zgdiag}d. corresponds to the production of a single $Z$ boson, with the photon radiated from a final state lepton.\\
+In addition to having a higher $BR*\sigma$ as compared to \ZZ (2.7\% for \ZZ vs 6.8\% for \Zgam), the \Zgam signal is also very pure. Thus, it should be possible to use \Zgam data to estimate \ZZ contribution to the background, and obtain a more accurate prediction.
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{Zg.png}
@@ -85,37 +87,35 @@ In addition to having a higher $BR*\sigma$ as compared to \ZZ (2.7\% for $ZZ$ vs
 	\end{center}
 \end{figure}
 \section{Approach}
-Following the method defined in the Ref \cite{gammajet}, we define a variable $R(p_T)$ to be the ratio of the cross sections of \ZZ to \Zgam as a function of $p_T$.
+Introducing a transfer factor $R(p_T)$, it is defined to be the ratio of the cross sections of \ZZ to \Zgam as a function of $p_T$.
 \begin{equation}
 	R(p_{T}) = \frac{\sigma_{ZZ}(p_{T})}{\sigma_{Z\gamma}(p_T)}
 \end{equation}
-With the two processes being kinematically similar at high $p_T$, $R$ depends on the coupling of the $Z$ and $\gamma$ to quarks. It should approach some value asymptotically.
+With the two processes being kinematically similar at high $p_T$, $R$ depends on the coupling of the $Z$ and $\gamma$ to quarks. It would be expected to reach a constant value at high $p_T$ that could be determined theoretically.
 
 The photon - quark and $Z$ boson - quark couplings in the Standard Model are given by,
 \begin{equation}
 	-ieQ_q\gamma^{\mu} \hspace{1 cm} \text{and} \hspace{1 cm}\frac{-ie}{2 \sin\theta_W \cos\theta_W}\gamma^{\mu}(v_q - a_q\gamma_5)
 \end{equation}
-respectively, where $Q_q,v_q$ and $a_q$ are respectively the electric, vector and axial neutral weak couplings of the quarks, and $\theta_W$ is the weak mixing angle. The cross sections are dependent on the matrix elements squared, which contain factors of $Q_q^2$ for $\gamma$, or $(v_q^2 + a_q^2)/4\sin^2 \theta_W \cos^2 \theta_W$ for $Z$. There is a contribution due to the $Z$ mass which appears in the internal propagators and phase space integration. This contribution becomes less important in the $p_T(\gamma)\gg M_Z$ region.
+respectively, where $Q_q,v_q$ and $a_q$ are respectively the electric, vector and axial neutral weak couplings of the quarks, and $\theta_W$ is the weak mixing angle. There is a contribution due to the $Z$ mass which appears in the internal propagators and phase space integration. This contribution becomes less important in the $p_T(\gamma)\gg M_Z$ region.
 
-Thus, in the high $p_T$ region, the $Z$ and $\gamma$ cross sections would be in the ratio
+Thus, the leading order contributions from $q\bar{q}\rightarrow ZZ$ and $q\bar{q}\rightarrow Z\gamma$ are shown in Equation \ref{eq:theory_R}.
 \begin{equation}
-	R_q = \frac{v_q^2 + a_q^2}{4\sin^2 \theta_W \cos^2 \theta_W * Q_q^2}.
-\end{equation} 
-
-Considering the contributions from both $u$ and $d$ flavor quarks,
-\begin{equation}
-	R = \frac{Z_u \left\langle u \right\rangle + Z_d \left\langle d\right\rangle}{\gamma_u \left\langle u\right\rangle + \gamma_d \left\langle d\right\rangle}
+\begin{split}
+	\sigma(q\bar{q}\rightarrow ZZ) &\propto \frac{1}{2!}\frac{e^2\{(v_q^2 + a_q^2)^2 + 4v_q^2a_q^2\} }{16\sin^4\theta_W\cos^4\theta_W}\\[1.5ex]
+	\sigma(q\bar{q}\rightarrow Z\gamma) &\propto \frac{e^2Q_q^2(v^2_q + a^2_q)}{4\sin^2\theta_W\cos\theta_W}
+\end{split}
+\label{eq:theory_R}
 \end{equation}
-Substituting $\sin^2 \theta_W = 0.2315$, at moderate $p_T$ values, $R \approx 1.4$\footnote{Equations (3) and (4), as well as the value of $R$ are taken from Ref \cite{gammajet}}.
+The $u$ and $d$ quarks present in a $pp$ collision have different coupling strengths as stated in Ref\cite{Z_coupling}, their relative contributions are accounted for using Equation \ref{eq:u_d_contrib}
+\begin{equation}
+R = \frac{\sigma(u\bar{u}\rightarrow ZZ)\langle u\rangle + \sigma(d\bar{d}\rightarrow ZZ)\langle d\rangle}{\sigma(u\bar{u}\rightarrow Z\gamma)\langle u\rangle + \sigma(d\bar{d}\rightarrow Z\gamma)\langle d\rangle}
+\label{eq:u_d_contrib}
+\end{equation}
 
-\begin{figure}[H]
-	\centering
-		\includegraphics[scale=0.5]{paper_Rplot.png}
-		\caption{Ratio of the $Z$ and $\gamma$ $p_T$ distributions \cite{gammajet}}
-\end{figure}
-This ratio R can be used as is for \ZZ and \Zgam, as the contribution from the $Z\rightarrow ll$ is identically multiplied into the numerator as well as the denominator, and thus cancels out.
+Pluggin in the required values, and setting $\sin^2\theta_W = 0.2315$, at moderate $p_T$ values, $R\approx 1.28$.
 
-\subsection*{MCFM cross sections}
+\subsection*{Theoretical determination of MCFM cross sections}
 A Monte Carlo program, MCFM v8.0 \cite{MCFM} at NLO is used to generate cross sections of \ZZ and \Zgam processes, with a selection of generator level cuts. The samples are generated with cuts on $E_{T,min}^{miss}$ for the $ZZ$ process $p_{T,min}(\gamma)$ for the $Z+\gamma$ process. A ratio of these cross sections is taken to obtain the $R$ distribution as a function of $p_T$. The uncertainty on $R$ is calculated by varying several parameters at the generator level, such as the renormalization and factorization scales, the PDF sets used, photon fragmentation, etc. Effects of applying lepton cuts on the cross sections as well as the ratio, and the contributions of the $q \bar{q}$ and $gg$ processes are also studied.
 
 However, the MCFM generator only produces $Z\rightarrow ee$ instead of $Z\rightarrow ll$. Thus, this branching ratio needs to be accounted for to obtain the value of $R$.
@@ -181,7 +181,7 @@ The ratio $R = \sigma(ZZ\rightarrow ee\nu\nu)/\sigma(Z\gamma\rightarrow ee\gamma
 	\caption{The transfer factor $R$ as a function of $p_T$, taken as a ratio of plots \ref{subfig:ZeeZvv} and \ref{subfig:Zeeg}. The leptonically decaying $Z$ boson decays to an $e^+e^-$ pair.}
 	\label{fig:Rcurve}
 \end{figure}
-The $R$ value is observed to increase from $\approx 0.24$ at 50 GeV to $\approx 0.47$ at high $p_T$, where it is constant. When the branching ratio of $Z$ boson decaying selectively to $e^+e^-$, or to $\nu\nu$, is accounted for as shown in Equation \ref{eq:R_inc}, the resulting ratio $R(p_T)$ is shown in Figure \ref{fig:RcurveBR}, which shows the ratio of $\sigma(ZZ)$ to $\sigma(Z\gamma)$, i.e. if the $Z$ bosons do not decay further. The value of $R$ is observed to increase from $\approx 0.61$ at 50 GeV to $\approx 1.2$ at high $p_T$.
+The $R$ value is observed to increase from $\approx 0.24$ at 50 GeV to $\approx 0.47$ at high $p_T$, where it is constant. When the branching ratio of $Z$ boson decaying selectively to $e^+e^-$, or to $\nu\nu$, is accounted for as shown in Equation \ref{eq:R_inc}, the resulting ratio $R(p_T)$ is shown in Figure \ref{fig:RcurveBR}, which shows the ratio of $\sigma(ZZ)$ to $\sigma(Z\gamma)$, i.e. if the $Z$ bosons do not decay further. The value of $R$ is observed to increase from $\approx 0.61$ at 50 GeV to $\approx 1.2$ at high $p_T$, as compared to the theoretical prediction of $R \approx 1.28$.
 \begin{figure}[H]
 	\centering
 	\includegraphics[width = 0.8\textwidth]{Ratio_with_BR.png}
@@ -321,12 +321,17 @@ This work was conducted under the patient supervision of Dr. Beate Heinemann. In
 	\textit{Search for an invisibly decaying Higgs boson or dark matter candidates produced in association with a Z boson in pp collisions at $\sqrt{s}$ = 13 TeV with the ATLAS detector}\\
 	\textbf{ATLAS Collaboration}\\
 	\texttt{arXiv:1708.09624}
-
+	
 \bibitem{gammajet}
 	\textit{Using $\gamma +$ jets to calibrate the Standard Model $Z(\rightarrow \nu\nu)+$ jets background to new processes at the LHC}\\
 	\textbf{S. Ask, M. A. Parker, T. Sandoval, M. E. Shea, W. J. Stirling}\\
 Cavendish Laboratory, University of Cambridge, CB3 0HE, UK; 2011\\
 	\texttt{[arXiv:1107.2803]}
+
+\bibitem{Z_coupling}
+	\textit{2017 Review of Particle Physics - Particle Listings}\\
+	\textbf{C. Patrignani \textit{et al}. (Particle Data Group)}\\
+	Chin. Phys. C, 40, 100001 (2016)
 	
 \bibitem{MCFM}
 	\textit{Monte Carlo for FeMtobarn processes (MCFM) v8.0 User Manual}\\
