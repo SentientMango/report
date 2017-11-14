@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  14 NOV 2017 13:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  14 NOV 2017 18:07
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -778,33 +778,33 @@ File: Ratio_with_BR.png Graphic file (type png)
 <use Ratio_with_BR.png>
 Package pdftex.def Info: Ratio_with_BR.png used on input line 208.
 (pdftex.def)             Requested size: 386.95894pt x 239.93623pt.
- <R_ggonly.png, id=148, 800.9925pt x 575.14874pt>
+ <R_ggonly.png, id=148, 1681.28125pt x 1135.24126pt>
 File: R_ggonly.png Graphic file (type png)
 
 <use R_ggonly.png>
 Package pdftex.def Info: R_ggonly.png used on input line 217.
-(pdftex.def)             Requested size: 237.0141pt x 170.1852pt.
- <R_omitgg.png, id=153, 1679.27374pt x 1134.2375pt>
+(pdftex.def)             Requested size: 237.0141pt x 160.024pt.
+ <R_omitgg.png, id=149, 1679.27374pt x 1134.2375pt>
 File: R_omitgg.png Graphic file (type png)
 
 <use R_omitgg.png>
 Package pdftex.def Info: R_omitgg.png used on input line 222.
 (pdftex.def)             Requested size: 237.0141pt x 160.07289pt.
  [7 <./Ratio_default.png> <./Ratio_with_BR.png>]
-<lep_cuts.png, id=166, 547.2947pt x 381.67593pt>
+<lep_cuts.png, id=162, 547.2947pt x 381.67593pt>
 File: lep_cuts.png Graphic file (type png)
  <use lep_cuts.png>
 Package pdftex.def Info: lep_cuts.png used on input line 235.
 (pdftex.def)             Requested size: 386.95894pt x 269.86197pt.
  [8 <./R_ggonly.png> <./R_omitgg.png> <./lep_cuts.png>]
-<scale/nlo_scale_overlay.png, id=177, 1233.85968pt x 861.2175pt>
+<scale/nlo_scale_overlay.png, id=172, 1233.85968pt x 861.2175pt>
 File: scale/nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/nlo_scale_overlay.png>
 Package pdftex.def Info: scale/nlo_scale_overlay.png used on input line 247.
 (pdftex.def)             Requested size: 386.95894pt x 270.0891pt.
 
-<scale/ggonly_nlo_scale_overlay.png, id=179, 1233.85968pt x 892.83563pt>
+<scale/ggonly_nlo_scale_overlay.png, id=174, 1233.85968pt x 892.83563pt>
 File: scale/ggonly_nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/ggonly_nlo_scale_overlay.png>
@@ -812,7 +812,7 @@ Package pdftex.def Info: scale/ggonly_nlo_scale_overlay.png used on input line
 256.
 (pdftex.def)             Requested size: 237.0141pt x 171.50696pt.
 
-<scale/omitgg_nlo_scale_overlay.png, id=180, 1226.33156pt x 877.02657pt>
+<scale/omitgg_nlo_scale_overlay.png, id=175, 1226.33156pt x 877.02657pt>
 File: scale/omitgg_nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/omitgg_nlo_scale_overlay.png>
@@ -820,7 +820,7 @@ Package pdftex.def Info: scale/omitgg_nlo_scale_overlay.png used on input line
 260.
 (pdftex.def)             Requested size: 237.0141pt x 169.5006pt.
  [9 <./scale/nlo_scale_overlay.png>]
-<PDF4_30_overlay.png, id=195, 673.76718pt x 379.4175pt>
+<PDF4_30_overlay.png, id=190, 673.76718pt x 379.4175pt>
 File: PDF4_30_overlay.png Graphic file (type png)
 
 <use PDF4_30_overlay.png>
@@ -828,14 +828,14 @@ Package pdftex.def Info: PDF4_30_overlay.png used on input line 273.
 (pdftex.def)             Requested size: 386.95894pt x 217.90863pt.
  [10 <./scale/ggonly_nlo_scale_overlay.png> <./scale/omitgg_nlo_scale_overlay.p
 ng> <./PDF4_30_overlay.png>]
-<PDF4_CT14_comp.png, id=210, 607.51968pt x 418.56375pt>
+<PDF4_CT14_comp.png, id=207, 607.51968pt x 418.56375pt>
 File: PDF4_CT14_comp.png Graphic file (type png)
 
 <use PDF4_CT14_comp.png>
 Package pdftex.def Info: PDF4_CT14_comp.png used on input line 284.
 (pdftex.def)             Requested size: 266.03473pt x 183.29362pt.
  [11 <./PDF4_CT14_comp.png>]
-<frag.png, id=227, 1859.94875pt x 1153.30875pt>
+<frag.png, id=224, 1859.94875pt x 1153.30875pt>
 File: frag.png Graphic file (type png)
  <use frag.png>
 Package pdftex.def Info: frag.png used on input line 322.
@@ -864,7 +864,7 @@ Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 433.
 Here is how much of TeX's memory you used:
  8086 strings out of 494860
  118578 string characters out of 6177602
- 217430 words of memory out of 5000000
+ 218071 words of memory out of 5000000
  11207 multiletter control sequences out of 15000+600000
  19175 words of font info for 74 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
@@ -890,10 +890,10 @@ e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
 onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
 m/cmtt10.pfb>
-Output written on Thesis_report.pdf (16 pages, 803147 bytes).
+Output written on Thesis_report.pdf (16 pages, 823485 bytes).
 PDF statistics:
- 343 PDF objects out of 1000 (max. 8388607)
- 275 compressed objects within 3 object streams
+ 340 PDF objects out of 1000 (max. 8388607)
+ 273 compressed objects within 3 object streams
  70 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
