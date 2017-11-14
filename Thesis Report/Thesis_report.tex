@@ -22,8 +22,8 @@
 
 \setlength{\jot}{5pt}
 
-\newcommand{\ZZ}{$ZZ\rightarrow ll\nu\nu$ }
-\newcommand{\Zgam}{$Z\gamma\rightarrow ll\gamma$ }
+\newcommand{\ZZ}{$ZZ\to ll\nu\nu$ }
+\newcommand{\Zgam}{$Z\gamma\to ll\gamma$ }
 
 \renewcommand{\arraystretch}{1.2}
 \usepackage{hyperref}
@@ -39,14 +39,32 @@
 \vfill
 {\LARGE\textbf{Mid Year Report - November 2017}}
 \vfill
-{\LARGE Mangesh Sonawane\\}
-\vspace{0.25cm}
-{\LARGE Supervisor: Dr. Beate Heinemann\\}
-\vspace{0.5cm}
-{\LARGE June 2017 - May 2018}
+{\Large Submitted to\\ Indian Institute of Science Education and Research, Pune\\in partial fulfilment of the requirements of the\\ \vspace{0.15cm}BS-MS Dual Degree Programme}
+\vfill
+{\Large by}
+\vfill
+{\Large Mangesh Sonawane\\Registration Number: 20131083\\}
+\vfill
+{\Large June 2017 - May 2018\\}
+{\Large Supervisor: Dr. Beate Heinemann\\}
+{\Large Conducted at DESY, Hamburg\\\vspace{0.15cm}Notkestra{\ss}e 85, 22607}
 \vfill
 \vfill
 \end{titlepage}
+\newpage
+\vfill
+\begin{center}
+\textbf{\LARGE CERTIFICATE}
+\end{center}
+This is to certify that this report, entitled "\textit{Estimation of $ZZ \to ll\nu\nu$ background using $Z(\to ll)+\gamma$ data}" towards the partial fulfilment of the BS-MS dual degree programme at the Indian Institute of Science Education and Research, Pune, represents study/work carried out by Mangesh Sonawane at The Deutsches Elektronen-Synchrotron (DESY), Hamburg, under the supervision of Dr. Beate Heinemann, Professor, experimental Particle Physics, Department of Physics at the Albert-Ludwigs-Universit{\"a}t, Freiburg, and is submitted for Mid-Year Evaluation in November 2017, during the academic year 2017-2018.
+\vfill
+Mangesh Sonawane \hfill Dr. Beate Heinemann
+\vfill
+{\noindent}Committee:\\
+Dr. Beate Heinemann\\
+Dr. Seema Sharma
+\vfill
+\newpage
 \tableofcontents
 \newpage
 \section*{Abstract}
@@ -221,7 +239,9 @@ To check the effects of lepton cuts on the ratio, samples with the same paramete
 \subsection{Uncertainty from Scale Variation}
 In higher order QCD calculations, perturbative corrections may be added to the vertices or propagators in a Feynman diagram. Physically, these corrections occur at very small time scales. These loop integrals that correspond to these corrections diverge.\\
 The higher the order, the more difficult the calculation is. It is possible to introduce an arbitrary cut-off scale $\mu$ such that up to a given order, the effect of these corrections can be absorbed into the strong coupling constant $\alpha_s(\mu)$.\\
-Two kinds of divergences are encountered: infrared divergences, and ultraviolet divergences. Infrared divergences occur for an on-shell internal propagator, and ultraviolet divergences are logarithmic divergences that occur as the integration variable approaches $\infty$. They correspond to physics at long and short distances\footnote{Long distances are those where soft interactions take place, away from the hard parton-parton interaction. Short distances are those where the hard parton parton interactions occur.}, respectively. The infrared divergences are addressed by the inclusion of the factorization scale $\mu_F$, while the ultraviolet divergences are addressed by the inclusion of the renormalization scale $\mu_R$. These parameters are arbitrary, and are set by hand. These are then varied between $\frac{1}{2}\mu < \mu < \ 2\mu$ to obtain an indication of the dependence of the matrix element on the scales, and thus, the uncertainty around the chosen scale. In this analysis, the central value for these parameters is chosen to be $M_Z = 91.187$ GeV, and the results are shown in Figure \ref{fig:scalecompare}.
+Two kinds of divergences are encountered: infrared divergences, and ultraviolet divergences. Infrared divergences occur for an on-shell internal propagator, and ultraviolet divergences are logarithmic divergences that occur as the integration variable approaches $\infty$. They correspond to physics at long and short distances\footnote{Long distances are those where soft interactions take place, away from the hard parton-parton interaction. Short distances are those where the hard parton parton interactions occur.}, respectively. The infrared divergences are addressed by the inclusion of the factorization scale $\mu_F$, while the ultraviolet divergences are addressed by the inclusion of the renormalization scale $\mu_R$. These parameters are arbitrary, and are set by hand. These are then varied between $\frac{1}{2}\mu < \mu < \ 2\mu$ to obtain an indication of the dependence of the matrix element on the scales, and thus, the uncertainty around the chosen scale. 
+
+In this analysis, the central value for these parameters is chosen to be $M_Z = 91.187$ GeV, and the results are shown in Figure \ref{fig:scalecompare}.
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.8\linewidth]{scale/nlo_scale_overlay.png}

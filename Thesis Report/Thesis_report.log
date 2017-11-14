@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  13 NOV 2017 20:18
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.9.18)  14 NOV 2017 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -706,11 +706,11 @@ LaTeX Info: Redefining \nameref on input line 31.
 \openout3 = `Thesis_report.out'.
 
 
-<Title_Head.png, id=40, 898.85812pt x 127.97812pt>
+<Title_Head.png, id=40, 810.02625pt x 175.65625pt>
 File: Title_Head.png Graphic file (type png)
  <use Title_Head.png>
 Package pdftex.def Info: Title_Head.png used on input line 36.
-(pdftex.def)             Requested size: 483.69684pt x 68.86891pt.
+(pdftex.def)             Requested size: 483.69684pt x 104.89334pt.
 LaTeX Font Info:    Try loading font information for U+msa on input line 38.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
@@ -722,149 +722,150 @@ LaTeX Font Info:    Try loading font information for U+msb on input line 38.
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Title_Head.png>] (./Thes
-is_report.toc)
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./Title_Head.png>]pdfTeX w
+arning (ext4): destination with the same identifier (name{page.1}) has been alr
+eady used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.67 \newpage
+              [1] (./Thesis_report.toc)
 \tf@toc=\write4
 \openout4 = `Thesis_report.toc'.
 
-pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has 
-been already used, duplicate ignored
-<to be read again> 
-                   \relax 
-l.51 \newpage
-              [1
+ [2
 
-] <HZ.png, id=68, 285.31593pt x 188.95593pt>
+]
+<HZ.png, id=75, 285.31593pt x 188.95593pt>
 File: HZ.png Graphic file (type png)
  <use HZ.png>
-Package pdftex.def Info: HZ.png used on input line 62.
+Package pdftex.def Info: HZ.png used on input line 80.
 (pdftex.def)             Requested size: 199.71979pt x 132.26823pt.
 
-<ZZ.png, id=71, 581.92406pt x 176.91093pt>
+<ZZ.png, id=78, 581.92406pt x 176.91093pt>
 File: ZZ.png Graphic file (type png)
  <use ZZ.png>
-Package pdftex.def Info: ZZ.png used on input line 71.
+Package pdftex.def Info: ZZ.png used on input line 89.
 (pdftex.def)             Requested size: 290.96132pt x 88.45525pt.
- [2 <./HZ.png>]
-<Zg.png, id=89, 796.47563pt x 122.70844pt>
+ [3 <./HZ.png>]
+<Zg.png, id=94, 796.47563pt x 122.70844pt>
 File: Zg.png Graphic file (type png)
  <use Zg.png>
-Package pdftex.def Info: Zg.png used on input line 84.
+Package pdftex.def Info: Zg.png used on input line 102.
 (pdftex.def)             Requested size: 483.69684pt x 74.52061pt.
- [3 <./ZZ.png> <./Zg.png>] [4] <ZZ_xsec.png, id=123, 1859.94875pt x 1153.30875p
+ [4 <./ZZ.png> <./Zg.png>] [5] <ZZ_xsec.png, id=128, 1859.94875pt x 1153.30875p
 t>
 File: ZZ_xsec.png Graphic file (type png)
  <use ZZ_xsec.png>
-Package pdftex.def Info: ZZ_xsec.png used on input line 169.
+Package pdftex.def Info: ZZ_xsec.png used on input line 187.
 (pdftex.def)             Requested size: 237.0141pt x 146.96132pt.
 
-<Zg_xsec.png, id=124, 1859.94875pt x 1153.30875pt>
+<Zg_xsec.png, id=129, 1859.94875pt x 1153.30875pt>
 File: Zg_xsec.png Graphic file (type png)
  <use Zg_xsec.png>
-Package pdftex.def Info: Zg_xsec.png used on input line 174.
+Package pdftex.def Info: Zg_xsec.png used on input line 192.
 (pdftex.def)             Requested size: 237.0141pt x 146.96132pt.
 
-<Ratio_default.png, id=125, 505.13719pt x 362.10281pt>
+<Ratio_default.png, id=130, 505.13719pt x 362.10281pt>
 File: Ratio_default.png Graphic file (type png)
  <use Ratio_default.png>
-Package pdftex.def Info: Ratio_default.png used on input line 183.
+Package pdftex.def Info: Ratio_default.png used on input line 201.
 (pdftex.def)             Requested size: 353.59361pt x 253.47023pt.
 
-[5 <./ZZ_xsec.png> <./Zg_xsec.png>]
-<Ratio_with_BR.png, id=140, 1394.96156pt x 864.98157pt>
+[6 <./ZZ_xsec.png> <./Zg_xsec.png>]
+<Ratio_with_BR.png, id=146, 1394.96156pt x 864.98157pt>
 File: Ratio_with_BR.png Graphic file (type png)
 
 <use Ratio_with_BR.png>
-Package pdftex.def Info: Ratio_with_BR.png used on input line 190.
+Package pdftex.def Info: Ratio_with_BR.png used on input line 208.
 (pdftex.def)             Requested size: 386.95894pt x 239.93623pt.
- <R_ggonly.png, id=142, 800.9925pt x 575.14874pt>
+ <R_ggonly.png, id=148, 800.9925pt x 575.14874pt>
 File: R_ggonly.png Graphic file (type png)
 
 <use R_ggonly.png>
-Package pdftex.def Info: R_ggonly.png used on input line 199.
+Package pdftex.def Info: R_ggonly.png used on input line 217.
 (pdftex.def)             Requested size: 237.0141pt x 170.1852pt.
- <R_omitgg.png, id=147, 1679.27374pt x 1134.2375pt>
+ <R_omitgg.png, id=153, 1679.27374pt x 1134.2375pt>
 File: R_omitgg.png Graphic file (type png)
 
 <use R_omitgg.png>
-Package pdftex.def Info: R_omitgg.png used on input line 204.
+Package pdftex.def Info: R_omitgg.png used on input line 222.
 (pdftex.def)             Requested size: 237.0141pt x 160.07289pt.
- [6 <./Ratio_default.png> <./Ratio_with_BR.png>]
-<lep_cuts.png, id=161, 547.2947pt x 381.67593pt>
+ [7 <./Ratio_default.png> <./Ratio_with_BR.png>]
+<lep_cuts.png, id=166, 547.2947pt x 381.67593pt>
 File: lep_cuts.png Graphic file (type png)
  <use lep_cuts.png>
-Package pdftex.def Info: lep_cuts.png used on input line 217.
+Package pdftex.def Info: lep_cuts.png used on input line 235.
 (pdftex.def)             Requested size: 386.95894pt x 269.86197pt.
-
-<scale/nlo_scale_overlay.png, id=164, 1233.85968pt x 861.2175pt>
+ [8 <./R_ggonly.png> <./R_omitgg.png> <./lep_cuts.png>]
+<scale/nlo_scale_overlay.png, id=177, 1233.85968pt x 861.2175pt>
 File: scale/nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/nlo_scale_overlay.png>
-Package pdftex.def Info: scale/nlo_scale_overlay.png used on input line 227.
+Package pdftex.def Info: scale/nlo_scale_overlay.png used on input line 247.
 (pdftex.def)             Requested size: 386.95894pt x 270.0891pt.
- [7 <./R_ggonly.png> <./R_omitgg.png> <./lep_cuts.png>]
-<scale/ggonly_nlo_scale_overlay.png, id=174, 1233.85968pt x 892.83563pt>
+
+<scale/ggonly_nlo_scale_overlay.png, id=179, 1233.85968pt x 892.83563pt>
 File: scale/ggonly_nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/ggonly_nlo_scale_overlay.png>
 Package pdftex.def Info: scale/ggonly_nlo_scale_overlay.png used on input line 
-236.
+256.
 (pdftex.def)             Requested size: 237.0141pt x 171.50696pt.
 
-<scale/omitgg_nlo_scale_overlay.png, id=175, 1226.33156pt x 877.02657pt>
+<scale/omitgg_nlo_scale_overlay.png, id=180, 1226.33156pt x 877.02657pt>
 File: scale/omitgg_nlo_scale_overlay.png Graphic file (type png)
 
 <use scale/omitgg_nlo_scale_overlay.png>
 Package pdftex.def Info: scale/omitgg_nlo_scale_overlay.png used on input line 
-240.
+260.
 (pdftex.def)             Requested size: 237.0141pt x 169.5006pt.
- [8 <./scale/nlo_scale_overlay.png>]
-<PDF4_30_overlay.png, id=190, 673.76718pt x 379.4175pt>
+ [9 <./scale/nlo_scale_overlay.png>]
+<PDF4_30_overlay.png, id=195, 673.76718pt x 379.4175pt>
 File: PDF4_30_overlay.png Graphic file (type png)
 
 <use PDF4_30_overlay.png>
-Package pdftex.def Info: PDF4_30_overlay.png used on input line 253.
+Package pdftex.def Info: PDF4_30_overlay.png used on input line 273.
 (pdftex.def)             Requested size: 386.95894pt x 217.90863pt.
- [9 <./scale/ggonly_nlo_scale_overlay.png> <./scale/omitgg_nlo_scale_overlay.pn
-g> <./PDF4_30_overlay.png>]
-<PDF4_CT14_comp.png, id=205, 607.51968pt x 418.56375pt>
+ [10 <./scale/ggonly_nlo_scale_overlay.png> <./scale/omitgg_nlo_scale_overlay.p
+ng> <./PDF4_30_overlay.png>]
+<PDF4_CT14_comp.png, id=210, 607.51968pt x 418.56375pt>
 File: PDF4_CT14_comp.png Graphic file (type png)
 
 <use PDF4_CT14_comp.png>
-Package pdftex.def Info: PDF4_CT14_comp.png used on input line 264.
+Package pdftex.def Info: PDF4_CT14_comp.png used on input line 284.
 (pdftex.def)             Requested size: 266.03473pt x 183.29362pt.
- [10 <./PDF4_CT14_comp.png>]
-<frag.png, id=222, 1859.94875pt x 1153.30875pt>
+ [11 <./PDF4_CT14_comp.png>]
+<frag.png, id=227, 1859.94875pt x 1153.30875pt>
 File: frag.png Graphic file (type png)
  <use frag.png>
-Package pdftex.def Info: frag.png used on input line 302.
+Package pdftex.def Info: frag.png used on input line 322.
 (pdftex.def)             Requested size: 483.69684pt x 299.9236pt.
- [11 <./frag.png>] [12] [13
+ [12 <./frag.png>] [13] [14
 
 ]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 382.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 402.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 382.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 413.
- [14]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 413.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 402.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 433.
+ [15]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 433.
 
 (./Thesis_report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 413.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 413.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 433.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 433.
 Package rerunfilecheck Info: File `Thesis_report.out' has not changed.
 (rerunfilecheck)             Checksum: 73E9907C964D0A53D8D24B670A28C074;574.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 413.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 433.
  ) 
 Here is how much of TeX's memory you used:
- 8084 strings out of 494860
- 118563 string characters out of 6177602
- 217428 words of memory out of 5000000
- 11206 multiletter control sequences out of 15000+600000
+ 8086 strings out of 494860
+ 118578 string characters out of 6177602
+ 217430 words of memory out of 5000000
+ 11207 multiletter control sequences out of 15000+600000
  19175 words of font info for 74 fonts, out of 8000000 for 9000
  36 hyphenation exceptions out of 8191
  36i,16n,39p,1372b,497s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -878,20 +879,21 @@ onts/type1/public/amsfonts/cm/cmmi6.pfb></usr/share/texlive/texmf-dist/fonts/ty
 pe1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
 lic/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
-m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17
-.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></u
-sr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share
-/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-d
-ist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fo
-nts/type1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
-fonts/cm/cmtt10.pfb>
-Output written on Thesis_report.pdf (15 pages, 776744 bytes).
+m/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12
+.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></
+usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr6.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texliv
+e/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texlive/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmsy8.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmsy9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmti10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmtt10.pfb>
+Output written on Thesis_report.pdf (16 pages, 803147 bytes).
 PDF statistics:
- 335 PDF objects out of 1000 (max. 8388607)
- 269 compressed objects within 3 object streams
- 69 named destinations out of 1000 (max. 500000)
+ 343 PDF objects out of 1000 (max. 8388607)
+ 275 compressed objects within 3 object streams
+ 70 named destinations out of 1000 (max. 500000)
  158 words of extra memory for PDF output out of 10000 (max. 10000000)
 
