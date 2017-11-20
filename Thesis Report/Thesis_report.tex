@@ -1,4 +1,4 @@
- \documentclass[11pt,a4paper,final]{report}
+\documentclass[11pt,a4paper,final]{report}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath}
 \usepackage{amsfonts}
@@ -56,7 +56,7 @@
 \begin{center}
 \textbf{\LARGE CERTIFICATE}
 \end{center}
-This is to certify that this report, entitled "\textit{Estimation of $ZZ \to ll\nu\nu$ background using $Z(\to ll)+\gamma$ data}" towards the partial fulfilment of the BS-MS dual degree programme at the Indian Institute of Science Education and Research, Pune, represents study/work carried out by Mangesh Sonawane at The Deutsches Elektronen-Synchrotron (DESY), Hamburg, under the supervision of Dr. Beate Heinemann, Professor, experimental Particle Physics, Department of Physics at the Albert-Ludwigs-Universit{\"a}t, Freiburg, and is submitted for Mid-Year Evaluation in November 2017, during the academic year 2017-2018.
+This is to certify that this report, entitled ``\textit{Estimation of $ZZ \to ll\nu\nu$ background using $Z(\to ll)+\gamma$ data}'' towards the partial fulfilment of the BS-MS dual degree programme at the Indian Institute of Science Education and Research, Pune, represents study/work carried out by Mangesh Sonawane at The Deutsches Elektronen-Synchrotron (DESY), Hamburg, under the supervision of Dr. Beate Heinemann, Professor, experimental Particle Physics, Department of Physics at the Albert-Ludwigs-Universit{\"a}t, Freiburg, and is submitted for Mid-Year Evaluation in November 2017, during the academic year 2017-2018.
 \vfill
 Mangesh Sonawane \hfill Dr. Beate Heinemann
 \vfill
@@ -87,8 +87,7 @@ A precise estimate of this process, along with the uncertainty associated with i
 \begin{figure}[H]
 	\begin{center}
 		\includegraphics[scale=0.5]{ZZ.png}
-		\captionsetup{justification=centering}
-		\caption{Feynman Diagram showing $ZZ$ Production \\ a. $q\bar{q}\rightarrow ZZ$, u-channel \hspace{1 cm} b. $q\bar{q}\rightarrow ZZ$, t-channel \hspace{1cm} c. $gg\rightarrow ZZ$}
+		\caption{Feynman Diagrams showing $ZZ$ Production. Figure a. and b. show the u-channel and t-channel production of $q\bar{q}\to ZZ$ respectively. Figure c. shows $gg\to ZZ$. These processes contribute 88.5\% of $pp\to ZZ$ cross section. The remaining 11.5\% come from $qg$ processes.}
 		\label{fig:ZZdiag}
 	\end{center}
 \end{figure}
@@ -100,14 +99,7 @@ In addition to having a higher $BR*\sigma$ as compared to \ZZ (2.7\% for \ZZ vs 
 \begin{figure}[h]
 	\begin{center}
 		\includegraphics[width=\linewidth]{Zg.png}
-		\captionsetup{justification=centering}
-		\caption{Feynman Diagram showing $Z+\gamma$ Production} 
-		\begin{tabular}{l}
-		$q\bar{q}\rightarrow Z+\gamma$,u-channel\\ 
-		b. $q\bar{q}\rightarrow Z+\gamma$,t-channel\\ 
-		c. $gg\rightarrow Z+\gamma$ \\ 
-		d. Final State Radiation (FSR)
-		\end{tabular}
+		\caption{Feynman Diagram showing $Z+\gamma$ Production. Figure a. and b. show the u-channel and t-channel production of $q\bar{q}\to Z\gamma$ respectively. Figure c. shows $gg\to Z\gamma$. These processes contribute 75\% of $pp\to ZZ$ the cross section. The remaining 25\% is from $qg\to Z\gamma$ processes. Figure d. shows a different process, in which the final state photon is radiated off a lepton, instead of from a hard vertex. In this case, the $Z$ boson is off-shell.}
 		\label{fig:Zgdiag}
 	\end{center}
 \end{figure}
@@ -137,12 +129,12 @@ The $u$ and $d$ quarks present in a $pp$ collision have different coupling stren
 R = \frac{\sigma(u\bar{u}\rightarrow ZZ)\langle u\rangle + \sigma(d\bar{d}\rightarrow ZZ)\langle d\rangle}{\sigma(u\bar{u}\rightarrow Z\gamma)\langle u\rangle + \sigma(d\bar{d}\rightarrow Z\gamma)\langle d\rangle}
 \label{eq:u_d_contrib}
 \end{equation}
-Using the vector and axial couplings of the $Z$ boson to $u$ and $d$ quarks\footnote{Vector and Axial couplings of Z to $u$ and $d$ quarks: $v_u = 0.18, a_u = 0.50, v_d = -0.35, a_d = -0.514$}, assuming $\langle d \rangle/\langle u\rangle = 0.5$ and setting $\sin^2\theta_W = 0.2315$, $R\approx 1.28$ for the dominant $qq$ interaction.
+Using the vector and axial couplings of the $Z$ boson to $u$ and $d$ quarks\footnote{Vector and Axial couplings of Z to $u$ and $d$ quarks: $v_u = 0.18, a_u = 0.50, v_d = -0.35, a_d = -0.514$}, assuming $\langle d \rangle/\langle u\rangle = 0.5$ and setting $\sin^2\theta_W = 0.2315$, $R\approx 1.28$ for the dominant $q\bar{q}$ interaction.
 
 \subsection*{Theoretical determination of MCFM cross sections}
-A Monte Carlo program, MCFM v8.0 \cite{MCFM} at NLO is used to generate cross sections of \ZZ and \Zgam processes, with a selection of generator level cuts. The samples are generated with cuts on $E_T^{miss} = p_T(Z\to \nu\nu)$ for the $ZZ$ process and $E_T^{miss} = p_T(\gamma)$ for the $Z+\gamma$ process. A ratio of these cross sections is taken to obtain the $R$ distribution as a function of $p_T$. The uncertainty on $R$ is calculated by varying several parameters at the generator level, such as the renormalization and factorization scales, the PDF sets used, photon fragmentation, etc. Effects of applying lepton cuts on the cross sections as well as on the ratio are studied. The contributions of the $q \bar{q}$ and $gg$ processes are estimated separately.
+A Monte Carlo program, MCFM v8.0 \cite{MCFM} at NLO is used to produce cross sections of \ZZ and \Zgam processes, with a selection of generator level cuts. The samples are generated with cuts on $E_T^{miss} = p_T(Z\to \nu\nu)$ for the $ZZ$ process and $E_T^{miss} = p_T(\gamma)$ for the $Z+\gamma$ process. A ratio of these cross sections is taken to obtain the $R$ distribution as a function of $p_T$. The uncertainty on $R$ is calculated by varying several parameters at the generator level, such as the renormalization and factorization scales, the PDF sets used, photon fragmentation, etc. Effects of applying lepton cuts on the cross sections as well as on the ratio are studied. The contributions of the $q \bar{q}$ and $gg$ processes are estimated separately.
 
-MCFM does not generate $Z\rightarrow ll$ but $Z\rightarrow ee$. As electrons and muons have similar properties with the exception of mass, simply the branching fraction of $Z\rightarrow ee$ must be accounted for to obtain the inclusive value of $R$.
+MCFM does not produce $Z\rightarrow ll$ but $Z\rightarrow ee$. As electrons and muons have similar properties with the exception of mass, simply the branching fraction of $Z\rightarrow ee$ must be accounted for to obtain the inclusive value of $R$.
 \begin{equation}\label{eq:R_inc}
 	R_{inc} = R * \frac{BR(Z\rightarrow ee)}{BR(Z \rightarrow ee)*BR(Z\rightarrow \nu\nu)*2}
 \end{equation}
@@ -185,15 +177,15 @@ Using the settings listed in Table \ref{table:default}, the cross sections shown
 \centering
 	\begin{subfigure}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{ZZ_xsec.png}
-		\caption{$ZZ\rightarrow ee\nu\nu$ cross section}
+		\caption{}
 		\label{subfig:ZeeZvv}
 	\end{subfigure}	
 	\begin{subfigure}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{Zg_xsec.png}
-		\caption{$Z(\rightarrow ee)+\gamma$ cross section}
+		\caption{}
 		\label{subfig:Zeeg}	
 	\end{subfigure}
-	\caption{Cross sections of $ZZ$ and $Z+\gamma$ processes with the cuts as in Table 1. The vertical axis is in $\log_{10}$ scale. The leptonically decaying $Z$ boson decays to an $e^+e^-$ pair. There is no flavor constraint on the neutrinos.}
+	\caption{Cross sections of $ZZ\to ee\nu\nu$ (left) and $Z\gamma\to ee\gamma$ (right) processes with the cuts as in Table 1. The vertical axis is in $\log_{10}$ scale. The leptonically decaying $Z$ boson decays to an $e^+e^-$ pair. There is no flavor constraint on the neutrinos.}
 	\label{xsecs}
 \end{figure}
 \begin{figure}[H]
@@ -254,13 +246,13 @@ The contributions from the $gg$ subprocess separately from the $q\bar{q}$ and $q
 \centering
 	\begin{subfigure}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{scale/ggonly_nlo_scale_overlay.png}
-		\caption{$R_{gg}$ from $gg$ subprocess only}
+		\caption{}
 	\end{subfigure}
 	\begin{subfigure}{0.49\textwidth}
 		\includegraphics[width=\linewidth]{scale/omitgg_nlo_scale_overlay.png}
-		\caption{$R_{q\bar{q}/qg}$ from $q\bar{q}$ and $qg$ subprocesses}
+		\caption{}
 	\end{subfigure}	
-\caption{The ratio $R(p_T)$ for various choices for $\mu_R$ (R) and $\mu_F$ (F) for the $gg$ and $qg+q\bar{q}$ subprocesses separately. The bottom panel shows the relative difference with respect to the reference (R: 91, F: 91) for each scale. The uncertainties are statistical.}
+\caption{The ratio $R(p_T)$ for various choices for $\mu_R$ (R) and $\mu_F$ (F) for the $gg$ (left) and $qg+q\bar{q}$ (right) subprocesses separately. The bottom panel shows the relative difference with respect to the reference (R: 91, F: 91) for each scale. The uncertainties are statistical.}
 \label{fig:gg_scale}
 \end{figure}
 
@@ -391,42 +383,38 @@ Cavendish Laboratory, University of Cambridge, CB3 0HE, UK; 2011\\
 	\textit{Isolated photons in perturbative QCD}\\	
 	\textbf{S. Frixione}\\
 	Phys. Lett.B429(1998)369–374, hep-ph/9801442
-
-\bibitem{ATHENA}
-	\textit{ATHENA reference}\\
-	\texttt{ATHENA reference}
-	
-\bibitem{powheg}
-	POWHEG BOX - ZZ,WZ and WW production
-	\begin{itemize}
-	\item \textbf{P. Nason}\\
-	JHEP 0411 (2004) 040, hep-ph/0409146
-	\item \textbf{S. Frixione, P. Nason and C. Oleari}\\
-	JHEP 0711 (2007) 070, \texttt{arXiv:0709.2092}
-	\item \textbf{S. Alioli, P. Nason, C. Oleari and E. Re}\\
-	JHEP 1006 (2010) 043, \texttt{arXiv:1002.2581}
-	\item \textit{ZZ, WZ and W+W- production, including Gamma/Z interference, singly resonant contributions and interference for identical leptons}\\
-	\textbf{T. Melia, P. Nason, R. Rontsch, G. Zanderighi}\\
-	JHEP 1111 (2011) 078, \texttt{arXiv:1107.5051}
-	\item \textit{W+W-, WZ and ZZ production in the POWHEG-BOX-V2}\\
-	\textbf{P. Nason and G. Zanderighi}\\
-	Eur.Phys.J. C74 (2014) 2702, \texttt{arXiv:1311.1365}
-	\end{itemize}
-	
-\bibitem{pythia}
-	\textit{PYTHIA 8.1}\\
-	\textbf{T. Sjöstrand, S. Mrenna and P. Skands}\\
-	JHEP05 (2006) 026, Comput. Phys. Comm. 178 (2008) 852. 
-	
-\bibitem{CT10}
-	\textit{New parton distributions for collider physics}
-	\textbf{Hung-Liang Lai, Marco Guzzi, Joey Huston, Zhao Li, Pavel M. Nadolsky, Jon Pumplin, C.-P. Yuan}
-	\texttt{arXiv:1007.2241}
-	
-\bibitem{MSTW2008}
-	\textit{Parton distributions for the LHC}\\
-	\textbf{A.D. Martin, W.J. Stirling, R.S. Thorne, G. Watt}
-	\texttt{arXiv:0901.0002}
+%	
+%\bibitem{powheg}
+%	POWHEG BOX - ZZ,WZ and WW production
+%	\begin{itemize}
+%	\item \textbf{P. Nason}\\
+%	JHEP 0411 (2004) 040, hep-ph/0409146
+%	\item \textbf{S. Frixione, P. Nason and C. Oleari}\\
+%	JHEP 0711 (2007) 070, \texttt{arXiv:0709.2092}
+%	\item \textbf{S. Alioli, P. Nason, C. Oleari and E. Re}\\
+%	JHEP 1006 (2010) 043, \texttt{arXiv:1002.2581}
+%	\item \textit{ZZ, WZ and W+W- production, including Gamma/Z interference, singly resonant contributions and interference for identical leptons}\\
+%	\textbf{T. Melia, P. Nason, R. Rontsch, G. Zanderighi}\\
+%	JHEP 1111 (2011) 078, \texttt{arXiv:1107.5051}
+%	\item \textit{W+W-, WZ and ZZ production in the POWHEG-BOX-V2}\\
+%	\textbf{P. Nason and G. Zanderighi}\\
+%	Eur.Phys.J. C74 (2014) 2702, \texttt{arXiv:1311.1365}
+%	\end{itemize}
+%	
+%\bibitem{pythia}
+%	\textit{PYTHIA 8.1}\\
+%	\textbf{T. Sjöstrand, S. Mrenna and P. Skands}\\
+%	JHEP05 (2006) 026, Comput. Phys. Comm. 178 (2008) 852. 
+%	
+%\bibitem{CT10}
+%	\textit{New parton distributions for collider physics}
+%	\textbf{Hung-Liang Lai, Marco Guzzi, Joey Huston, Zhao Li, Pavel M. Nadolsky, Jon Pumplin, C.-P. Yuan}
+%	\texttt{arXiv:1007.2241}
+%	
+%\bibitem{MSTW2008}
+%	\textit{Parton distributions for the LHC}\\
+%	\textbf{A.D. Martin, W.J. Stirling, R.S. Thorne, G. Watt}
+%	\texttt{arXiv:0901.0002}
 	
 \end{thebibliography}
 
